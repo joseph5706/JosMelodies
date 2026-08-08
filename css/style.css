@@ -974,68 +974,52 @@ footer{
 
 }
 /* ===========================
-   PLATFORM BRAND COLORS
+   PLATFORM ICON COLORS
 =========================== */
 
-/* Spotify */
-.spotify .floating-icon{
-    color:#1DB954;
-    border-color:rgba(29,185,84,.25);
-    background:rgba(29,185,84,.07);
-    box-shadow:0 0 25px rgba(29,185,84,.15);
+.platform-card.spotify .floating-icon {
+    color: #1DB954 !important;
+    border-color: rgba(29, 185, 84, 0.4) !important;
+    background: rgba(29, 185, 84, 0.10) !important;
+    box-shadow: 0 0 30px rgba(29, 185, 84, 0.25) !important;
 }
 
-.spotify:hover .floating-icon{
-    color:#1DB954;
-    border-color:rgba(29,185,84,.55);
-    background:rgba(29,185,84,.12);
-    box-shadow:0 0 35px rgba(29,185,84,.30);
+.platform-card.youtube .floating-icon {
+    color: #FF0000 !important;
+    border-color: rgba(255, 0, 0, 0.4) !important;
+    background: rgba(255, 0, 0, 0.10) !important;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.25) !important;
 }
 
-
-/* YouTube */
-.youtube .floating-icon{
-    color:#FF0000;
-    border-color:rgba(255,0,0,.25);
-    background:rgba(255,0,0,.07);
-    box-shadow:0 0 25px rgba(255,0,0,.15);
+.platform-card.apple .floating-icon {
+    color: #FA2D48 !important;
+    border-color: rgba(250, 45, 72, 0.4) !important;
+    background: rgba(250, 45, 72, 0.10) !important;
+    box-shadow: 0 0 30px rgba(250, 45, 72, 0.25) !important;
 }
 
-.youtube:hover .floating-icon{
-    color:#FF0000;
-    border-color:rgba(255,0,0,.55);
-    background:rgba(255,0,0,.12);
-    box-shadow:0 0 35px rgba(255,0,0,.30);
+.platform-card.soundcloud .floating-icon {
+    color: #FF5500 !important;
+    border-color: rgba(255, 85, 0, 0.4) !important;
+    background: rgba(255, 85, 0, 0.10) !important;
+    box-shadow: 0 0 30px rgba(255, 85, 0, 0.25) !important;
 }
 
 
-/* Apple Music */
-.apple .floating-icon{
-    color:#FA2D48;
-    border-color:rgba(250,45,72,.25);
-    background:rgba(250,45,72,.07);
-    box-shadow:0 0 25px rgba(250,45,72,.15);
+/* HOVER GLOW */
+
+.platform-card.spotify:hover .floating-icon {
+    box-shadow: 0 0 45px rgba(29, 185, 84, 0.55) !important;
 }
 
-.apple:hover .floating-icon{
-    color:#FA2D48;
-    border-color:rgba(250,45,72,.55);
-    background:rgba(250,45,72,.12);
-    box-shadow:0 0 35px rgba(250,45,72,.30);
+.platform-card.youtube:hover .floating-icon {
+    box-shadow: 0 0 45px rgba(255, 0, 0, 0.55) !important;
 }
 
-
-/* SoundCloud */
-.soundcloud .floating-icon{
-    color:#FF5500;
-    border-color:rgba(255,85,0,.25);
-    background:rgba(255,85,0,.07);
-    box-shadow:0 0 25px rgba(255,85,0,.15);
+.platform-card.apple:hover .floating-icon {
+    box-shadow: 0 0 45px rgba(250, 45, 72, 0.55) !important;
 }
 
-.soundcloud:hover .floating-icon{
-    color:#FF5500;
-    border-color:rgba(255,85,0,.55);
-    background:rgba(255,85,0,.12);
-    box-shadow:0 0 35px rgba(255,85,0,.30);
+.platform-card.soundcloud:hover .floating-icon {
+    box-shadow: 0 0 45px rgba(255, 85, 0, 0.55) !important;
 }
