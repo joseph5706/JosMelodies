@@ -973,3 +973,69 @@ footer{
     }
 
 }
+/* ===========================
+   PLATFORM BRAND COLORS
+=========================== */
+
+/* Spotify */
+.spotify .floating-icon{
+    color:#1DB954;
+    border-color:rgba(29,185,84,.25);
+    background:rgba(29,185,84,.07);
+    box-shadow:0 0 25px rgba(29,185,84,.15);
+}
+
+.spotify:hover .floating-icon{
+    color:#1DB954;
+    border-color:rgba(29,185,84,.55);
+    background:rgba(29,185,84,.12);
+    box-shadow:0 0 35px rgba(29,185,84,.30);
+}
+
+
+/* YouTube */
+.youtube .floating-icon{
+    color:#FF0000;
+    border-color:rgba(255,0,0,.25);
+    background:rgba(255,0,0,.07);
+    box-shadow:0 0 25px rgba(255,0,0,.15);
+}
+
+.youtube:hover .floating-icon{
+    color:#FF0000;
+    border-color:rgba(255,0,0,.55);
+    background:rgba(255,0,0,.12);
+    box-shadow:0 0 35px rgba(255,0,0,.30);
+}
+
+
+/* Apple Music */
+.apple .floating-icon{
+    color:#FA2D48;
+    border-color:rgba(250,45,72,.25);
+    background:rgba(250,45,72,.07);
+    box-shadow:0 0 25px rgba(250,45,72,.15);
+}
+
+.apple:hover .floating-icon{
+    color:#FA2D48;
+    border-color:rgba(250,45,72,.55);
+    background:rgba(250,45,72,.12);
+    box-shadow:0 0 35px rgba(250,45,72,.30);
+}
+
+
+/* SoundCloud */
+.soundcloud .floating-icon{
+    color:#FF5500;
+    border-color:rgba(255,85,0,.25);
+    background:rgba(255,85,0,.07);
+    box-shadow:0 0 25px rgba(255,85,0,.15);
+}
+
+.soundcloud:hover .floating-icon{
+    color:#FF5500;
+    border-color:rgba(255,85,0,.55);
+    background:rgba(255,85,0,.12);
+    box-shadow:0 0 35px rgba(255,85,0,.30);
+}
