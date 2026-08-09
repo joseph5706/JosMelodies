@@ -1829,3 +1829,125 @@ footer{
         gap: 20px;
     }
 }
+/* =========================================
+   MILESTONE 1.8 — MOTION & VISUAL EXPERIENCE
+========================================= */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ambient background glow */
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+    filter: blur(100px);
+    opacity: 0.08;
+}
+
+body::before {
+    top: 10%;
+    left: -180px;
+    background: #35a8ff;
+    animation: auroraFloat 12s ease-in-out infinite alternate;
+}
+
+body::after {
+    bottom: 5%;
+    right: -180px;
+    background: #35a8ff;
+    animation: auroraFloat 15s ease-in-out infinite alternate-reverse;
+}
+
+
+/* Floating glow */
+@keyframes auroraFloat {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(70px, 40px) scale(1.12);
+    }
+
+    100% {
+        transform: translate(-30px, 80px) scale(.95);
+    }
+}
+
+
+/* Section reveal */
+section {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Better card movement */
+.platform-card,
+.contact-card {
+    will-change: transform;
+}
+
+
+/* Image hover movement */
+img {
+    transition:
+        transform .5s cubic-bezier(.2,.8,.2,1),
+        filter .5s ease;
+}
+
+img:hover {
+    transform: scale(1.025);
+}
+
+
+/* Links */
+a {
+    transition:
+        color .3s ease,
+        opacity .3s ease,
+        transform .3s ease;
+}
+
+
+/* Respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    section {
+        opacity: 1;
+        transform: none;
+    }
+}
