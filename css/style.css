@@ -2242,3 +2242,26 @@ a {
     letter-spacing: 2.5px;
     white-space: nowrap;
 }
+.hero-scroll-arrow {
+    display: inline-block;
+    color: #00cfff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    
+    text-shadow:
+        0 0 8px rgba(0, 207, 255, 0.8),
+        0 0 18px rgba(0, 207, 255, 0.5);
+
+    animation: heroScrollBounce 1.8s ease-in-out infinite;
+}
+
+@keyframes heroScrollBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+}
