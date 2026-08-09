@@ -2211,11 +2211,13 @@ a {
         padding: 16px 25px;
     }
 }
-.hero-scroll {
-    position: fixed;
-    right: 55px;
-    bottom: 45px;
+/* HERO SCROLL */
 
+.hero-scroll {
+    position: absolute;
+    left: calc(50% + 190px);
+    top: 64%;
+    
     display: flex;
     align-items: center;
     gap: 10px;
@@ -2226,12 +2228,12 @@ a {
     letter-spacing: 3px;
     white-space: nowrap;
 
-    z-index: 999;
+    z-index: 20;
 }
 
 .hero-scroll-arrow {
     color: #00cfff;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1;
 
     text-shadow:
@@ -2247,6 +2249,6 @@ a {
     }
 
     50% {
-        transform: translateY(7px);
+        transform: translateY(6px);
     }
 }
