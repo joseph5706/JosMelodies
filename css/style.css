@@ -2212,9 +2212,9 @@ a {
     }
 }
 .hero-scroll {
-    position: absolute;
+    position: fixed;
     right: 55px;
-    bottom: 120px;
+    bottom: 45px;
 
     display: flex;
     align-items: center;
@@ -2225,14 +2225,18 @@ a {
     font-weight: 500;
     letter-spacing: 3px;
     white-space: nowrap;
-    z-index: 50;
+
+    z-index: 999;
 }
 
 .hero-scroll-arrow {
     color: #00cfff;
     font-size: 28px;
     line-height: 1;
-    text-shadow: 0 0 12px rgba(0, 207, 255, 0.9);
+
+    text-shadow:
+        0 0 8px rgba(0, 207, 255, 0.8),
+        0 0 18px rgba(0, 207, 255, 0.5);
 
     animation: heroScrollBounce 1.8s ease-in-out infinite;
 }
