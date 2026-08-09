@@ -2214,87 +2214,38 @@ a {
 /* Scroll Down Indicator */
 .scroll-down {
     position: absolute;
-    right: 45px;
-    bottom: 30px;
+    left: calc(50% + 330px);
+    bottom: 25px;
+
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 8px;
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 11px;
-    letter-spacing: 3px;
+    gap: 10px;
+
+    color: #ffffff;
+    font-size: 13px;
     font-weight: 500;
+    letter-spacing: 3px;
+    white-space: nowrap;
+
+    opacity: 0.9;
     z-index: 10;
+
     animation: scrollFloat 2s ease-in-out infinite;
 }
 
 .scroll-arrow {
     font-size: 28px;
-    color: #20cfff;
     line-height: 1;
-    text-shadow: 0 0 12px rgba(32, 207, 255, 0.8);
+    color: #00cfff;
+    text-shadow: 0 0 12px rgba(0, 207, 255, 0.8);
 }
 
 @keyframes scrollFloat {
     0%, 100% {
         transform: translateY(0);
-        opacity: 0.7;
     }
 
     50% {
-        transform: translateY(8px);
-        opacity: 1;
+        transform: translateY(7px);
     }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .scroll-down {
-        right: 20px;
-        bottom: 20px;
-        font-size: 9px;
-        letter-spacing: 2px;
-    }
-
-    .scroll-arrow {
-        font-size: 24px;
-    }
-}
-.tagline-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 45px;
-}
-
-.tagline-row h2 {
-  margin: 0;
-}
-
-.scroll-cue {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  color: #ffffff;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  opacity: 0.85;
-  animation: scrollFloat 2s ease-in-out infinite;
-}
-
-.scroll-arrow {
-  font-size: 25px;
-  line-height: 1;
-}
-
-@keyframes scrollFloat {
-  0%, 100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(7px);
-  }
 }
