@@ -2293,3 +2293,39 @@ a {
         transform: translateY(6px);
     }
 }
+.scroll-down {
+    position: absolute;
+    right: 70px;
+    bottom: 45px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    white-space: nowrap;
+
+    z-index: 20;
+
+    animation: scrollFloat 2s ease-in-out infinite;
+}
+
+.scroll-arrow {
+    font-size: 28px;
+    line-height: 1;
+    color: #00cfff;
+    text-shadow: 0 0 12px rgba(0, 207, 255, 0.9);
+}
+
+@keyframes scrollFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(7px);
+    }
+}
