@@ -2260,3 +2260,41 @@ a {
         font-size: 24px;
     }
 }
+.tagline-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+.tagline-row h2 {
+  margin: 0;
+}
+
+.scroll-cue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  animation: scrollFloat 2s ease-in-out infinite;
+}
+
+.scroll-arrow {
+  font-size: 25px;
+  line-height: 1;
+}
+
+@keyframes scrollFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(7px);
+  }
+}
