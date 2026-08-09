@@ -2211,4 +2211,38 @@ a {
         padding: 16px 25px;
     }
 }
+.hero-scroll {
+    position: absolute;
+    right: 55px;
+    bottom: 35px;
 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    z-index: 50;
+}
+
+.hero-scroll-arrow {
+    color: #00cfff;
+    font-size: 28px;
+    line-height: 1;
+    text-shadow: 0 0 12px rgba(0, 207, 255, 0.9);
+
+    animation: heroScrollBounce 1.8s ease-in-out infinite;
+}
+
+@keyframes heroScrollBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(7px);
+    }
+}
