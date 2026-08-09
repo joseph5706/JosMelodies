@@ -2214,7 +2214,7 @@ a {
 .hero-scroll {
     position: absolute;
     right: 55px;
-    bottom: 35px;
+    bottom: 120px;
 
     display: flex;
     align-items: center;
