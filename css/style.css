@@ -2211,9 +2211,8 @@ a {
         padding: 16px 25px;
     }
 }
-/* =========================================
-   HERO TAGLINE + SCROLL INDICATOR
-   ========================================= */
+/* HERO TAGLINE + SCROLL */
+
 .hero-tagline-row {
     position: relative;
     width: 100%;
@@ -2228,7 +2227,7 @@ a {
 
 .hero-scroll {
     position: absolute;
-    left: calc(50% + 490px);
+    left: calc(50% + 230px);
 
     display: flex;
     align-items: center;
@@ -2241,14 +2240,17 @@ a {
     font-weight: 500;
     letter-spacing: 2.5px;
     white-space: nowrap;
+
+    z-index: 20;
 }
+
 .hero-scroll-arrow {
     display: inline-block;
     color: #00cfff;
     font-size: 24px;
     font-weight: 700;
     line-height: 1;
-    
+
     text-shadow:
         0 0 8px rgba(0, 207, 255, 0.8),
         0 0 18px rgba(0, 207, 255, 0.5);
@@ -2264,4 +2266,27 @@ a {
     50% {
         transform: translateY(6px);
     }
+}
+
+/* Keep hero visible */
+
+.hero {
+    opacity: 1;
+    transform: none;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .hero-tagline-row {
+        flex-direction: column;
+    }
+
+    .hero-scroll {
+        position: static;
+        margin-top: -8px;
+        margin-bottom: 22px;
+    }
+
 }
