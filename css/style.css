@@ -3409,3 +3409,102 @@ html {
         transform: translate(-220px, 150px) rotate(-35deg);
     }
 }
+/* =========================================
+   REAL SHOOTING STARS — DESKTOP
+   ========================================= */
+
+@media (min-width: 701px) {
+
+    /* LEFT → RIGHT, DIAGONALLY */
+    .website-music-sparkles .star-1 {
+        top: 10%;
+        left: -120px;
+        animation-name: shootingDiagonalRight;
+        animation-delay: 0s;
+    }
+
+    /* RIGHT → LEFT, DIAGONALLY */
+    .website-music-sparkles .star-2 {
+        top: 25%;
+        left: auto;
+        right: -120px;
+        animation-name: shootingDiagonalLeft;
+        animation-delay: 5s;
+    }
+
+    /* LEFT → RIGHT, DIAGONALLY */
+    .website-music-sparkles .star-3 {
+        top: 45%;
+        left: -120px;
+        animation-name: shootingDiagonalRight;
+        animation-delay: 10s;
+    }
+}
+
+
+/* =========================================
+   DIAGONAL LEFT → RIGHT
+   ========================================= */
+
+@keyframes shootingDiagonalRight {
+
+    0% {
+        opacity: 0;
+        transform:
+            translate(0, 0)
+            rotate(35deg);
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    12% {
+        opacity: 1;
+        transform:
+            translate(120vw, 70vh)
+            rotate(35deg);
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* =========================================
+   DIAGONAL RIGHT → LEFT
+   ========================================= */
+
+@keyframes shootingDiagonalLeft {
+
+    0% {
+        opacity: 0;
+        transform:
+            translate(0, 0)
+            rotate(-35deg);
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    12% {
+        opacity: 1;
+        transform:
+            translate(-120vw, 70vh)
+            rotate(-35deg);
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
