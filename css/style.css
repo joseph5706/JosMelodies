@@ -2953,3 +2953,39 @@ a {
         height: 38px !important;
     }
 }
+/* =========================================
+   NAVBAR LOGO - FORCE CORRECT IMAGE
+========================================= */
+
+.navbar .brand::before,
+.navbar .brand::after {
+    content: none !important;
+    background: none !important;
+    background-image: none !important;
+}
+
+.navbar .navbar-logo {
+    content: url("../assets/logo.jpg") !important;
+
+    width: 45px !important;
+    height: 45px !important;
+
+    display: block !important;
+
+    object-fit: contain !important;
+
+    background: none !important;
+    background-image: none !important;
+
+    border: none !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 700px) {
+
+    .navbar .navbar-logo {
+        width: 38px !important;
+        height: 38px !important;
+    }
+
+}
