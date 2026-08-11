@@ -2565,3 +2565,93 @@ a {
     align-items: center !important;
     gap: 20px !important;
 }
+/* =========================================
+   FINAL HERO POSITION FIX
+   ========================================= */
+
+.hero-content {
+    transform: translateY(-90px) !important;
+}
+
+/* Keep scroll/buttons moving with the hero */
+.hero-scroll {
+    margin-top: 18px !important;
+}
+
+
+/* =========================================
+   MENU OVERLAY FIX
+   ========================================= */
+
+.menu-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100vh !important;
+
+    background: rgba(3, 10, 20, 0.97) !important;
+
+    z-index: 9999 !important;
+
+    display: none !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.menu-overlay.active {
+    display: flex !important;
+}
+
+.mobile-menu {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 28px !important;
+}
+
+.mobile-menu a {
+    color: white !important;
+    text-decoration: none !important;
+
+    font-family: "Space Grotesk", sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 500 !important;
+
+    transition: 0.25s ease !important;
+}
+
+.mobile-menu a:hover {
+    color: #08c8ff !important;
+}
+
+
+/* CLOSE BUTTON */
+.menu-close {
+    position: absolute !important;
+    top: 30px !important;
+    right: 40px !important;
+
+    background: transparent !important;
+    border: none !important;
+
+    color: white !important;
+
+    font-size: 32px !important;
+    cursor: pointer !important;
+
+    z-index: 10001 !important;
+}
+
+
+/* MENU BUTTON MUST BE CLICKABLE */
+.menu-btn {
+    position: relative !important;
+    z-index: 10002 !important;
+
+    cursor: pointer !important;
+
+    pointer-events: auto !important;
+}
