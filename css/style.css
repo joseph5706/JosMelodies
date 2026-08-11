@@ -77,22 +77,22 @@ header{
 
 .navbar {
     position: fixed;
-    top: 18px;
+    top: 14px;
     left: 3%;
     right: 3%;
-    height: 105px;
+    height: 72px;
+
+    padding: 0 22px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 28px;
-
     background: rgba(3, 15, 27, 0.88);
     backdrop-filter: blur(18px);
 
     border: 1px solid rgba(0, 207, 255, 0.15);
-    border-radius: 25px;
+    border-radius: 22px;
 
     z-index: 1000;
 }
@@ -100,19 +100,17 @@ header{
 .brand {
     display: flex;
     align-items: center;
-    gap: 15px;
-    text-decoration: none;
+    gap: 12px;
 }
 
 .brand img {
-    width: 55px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
 }
 
 .brand span {
-    color: white;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
 }
 
@@ -121,18 +119,17 @@ header{
 .menu-btn {
     background: transparent;
     border: 1px solid rgba(0, 207, 255, 0.35);
+
     color: white;
 
-    padding: 12px 20px;
+    padding: 10px 17px;
     border-radius: 12px;
 
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: 2px;
 
     cursor: pointer;
-
-    transition: 0.3s ease;
 }
 
 .menu-btn:hover {
