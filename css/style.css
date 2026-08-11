@@ -3049,17 +3049,19 @@ html {
     overflow: visible;
 }
 
-/* Sparkles around Listen Now */
+/* Existing sparkles + extra sparkles */
 .btn-primary::before,
 .btn-primary::after {
     position: absolute;
     pointer-events: none;
-    font-size: 13px;
+    font-size: 14px;
     opacity: 0;
+    color: #4da6ff;
+    text-shadow: 0 0 8px #1e90ff;
     animation: musicSparkle 2.5s ease-in-out infinite;
 }
 
-/* Left-side music sparkle */
+/* Existing left music note */
 .btn-primary::before {
     content: "♪";
     left: -18px;
@@ -3067,7 +3069,7 @@ html {
     animation-delay: 0.3s;
 }
 
-/* Right-side sparkle */
+/* Existing right star */
 .btn-primary::after {
     content: "✦";
     right: -18px;
@@ -3075,6 +3077,16 @@ html {
     animation-delay: 1.2s;
 }
 
+/* Extra sparkles */
+.btn-primary {
+    --sparkle1: "♫";
+    --sparkle2: "✧";
+}
+
+/* Extra floating music particles */
+.btn-primary + .sparkle-layer {
+    position: absolute;
+}
 @keyframes musicSparkle {
     0% {
         opacity: 0;
