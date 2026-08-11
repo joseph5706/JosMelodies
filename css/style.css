@@ -2665,3 +2665,14 @@ a {
     margin-top: 0 !important;
     margin-bottom: 18px !important;
 }
+/* FIX GAP BETWEEN TAGLINE AND ARTIST TEXT */
+
+.hero-content > p {
+    margin-top: -10px !important;
+    padding-top: 0 !important;
+}
+
+.hero-tagline-row {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
