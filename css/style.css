@@ -76,25 +76,20 @@ header{
 ================================ */
 
 .navbar {
-    position: fixed;
-    top: 14px;
-    left: 3%;
-    right: 3%;
+    width: min(1200px, 92%);
     height: 72px;
-
+    margin: 14px auto 0;
     padding: 0 22px;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
-    background: rgba(3, 15, 27, 0.88);
-    backdrop-filter: blur(18px);
-
-    border: 1px solid rgba(0, 207, 255, 0.15);
-    border-radius: 22px;
-
-    z-index: 1000;
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 18px;
+    background: rgba(5,11,20,.65);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 }
 
 .brand {
@@ -119,25 +114,18 @@ header{
 .menu-btn {
     background: transparent;
     border: none;
-
     color: white;
-
     padding: 10px 4px;
-
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 3px;
-
     cursor: pointer;
-
-    transition: 0.3s ease;
 }
 
 .menu-btn:hover {
     color: #00cfff;
-    text-shadow: 0 0 15px rgba(0, 207, 255, 0.7);
+    text-shadow: 0 0 15px rgba(0, 207, 255, .7);
 }
-
 /* MENU OVERLAY */
 
 .menu-overlay {
@@ -205,29 +193,26 @@ header{
 }
 
 .logo {
-    width: 180px !important;
-    height: auto !important;
-    max-width: none !important;
-    max-height: none !important;
-    object-fit: contain !important;
-    object-position: left center;
-    border-radius: 0 !important;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
     flex-shrink: 0;
 }
 
-
-.logo img{
-    width:44px;
-    height:44px;
-    object-fit:cover;
-    border-radius:50%;
-    box-shadow:0 0 18px rgba(0,200,255,.18);
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 18px rgba(0, 200, 255, .18);
 }
 
-.logo span{
-    font-size:1.1rem;
-    font-family:'Space Grotesk',sans-serif;
+.logo span {
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .nav-links{
