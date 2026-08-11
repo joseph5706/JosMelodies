@@ -2655,3 +2655,13 @@ a {
 
     pointer-events: auto !important;
 }
+/* Reduce gap between tagline and artist description */
+
+.hero-tagline-row {
+    margin-bottom: 8px !important;
+}
+
+.hero-content > p {
+    margin-top: 0 !important;
+    margin-bottom: 18px !important;
+}
