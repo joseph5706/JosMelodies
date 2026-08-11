@@ -2995,7 +2995,7 @@ a {
 }
 @media (max-width: 700px) {
     .hero-content {
-        transform: translateY(-50px) !important;
+        transform: translateY(-20px) !important;
     }
 }
 @media (max-width: 700px) {
