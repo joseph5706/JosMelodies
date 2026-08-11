@@ -3130,106 +3130,104 @@ html {
     }
 }
 /* =========================================
-   JOSMELODIES - BACKGROUND MUSIC SPARKLES
+   JOSMELODIES - FLOATING MUSIC SPARKLES
    CSS ONLY
    ========================================= */
 
 body {
-    position: relative;
     overflow-x: hidden;
 }
 
-/* Main floating music layer */
+/* Floating music symbols */
 body::before {
-    content: "♪   ✦   ♫   ✧   ·   ♪   ✦   ♫   ·   ✧";
+    content: "♪     ✦       ♫        ✧        ♪       ·       ✦       ♫       ♪";
     position: fixed;
     left: 0;
-    bottom: -30px;
+    bottom: -40px;
     width: 100%;
-    color: #4da6ff;
-    font-size: 16px;
-    letter-spacing: 45px;
-    line-height: 1;
+    height: 30px;
+
+    color: rgba(77, 166, 255, 0.45);
+    font-size: 18px;
+    letter-spacing: 10px;
     white-space: nowrap;
+
     pointer-events: none;
-    z-index: 0;
+    z-index: 999;
 
-    opacity: 0;
     text-shadow:
-        0 0 8px #1e90ff,
-        0 0 16px rgba(30, 144, 255, 0.7);
+        0 0 6px #1e90ff,
+        0 0 15px rgba(30, 144, 255, 0.8);
 
-    animation: backgroundMusicFloat 14s linear infinite;
+    animation: floatMusicUp 12s linear infinite;
 }
 
-/* Second layer with different timing */
+/* Second wave */
 body::after {
-    content: "✦   ·   ♪   ✧   ♫   ·   ✦   ♪   ♫";
+    content: "✧      ♪       ·       ♫       ✦       ♪       ✧       ♫";
     position: fixed;
-    left: 10%;
-    bottom: -50px;
+    left: 5%;
+    bottom: -60px;
     width: 100%;
-    color: #6bb8ff;
-    font-size: 12px;
-    letter-spacing: 60px;
+    height: 30px;
+
+    color: rgba(120, 190, 255, 0.3);
+    font-size: 13px;
+    letter-spacing: 18px;
     white-space: nowrap;
+
     pointer-events: none;
-    z-index: 0;
+    z-index: 999;
 
-    opacity: 0;
     text-shadow:
-        0 0 7px #1e90ff,
-        0 0 14px rgba(30, 144, 255, 0.6);
+        0 0 6px #1e90ff,
+        0 0 12px rgba(30, 144, 255, 0.6);
 
-    animation: backgroundMusicFloat2 18s linear infinite;
+    animation: floatMusicUp2 16s linear infinite;
 }
 
-
-@keyframes backgroundMusicFloat {
+@keyframes floatMusicUp {
 
     0% {
+        transform: translateY(0);
         opacity: 0;
-        transform: translateY(0) translateX(0);
     }
 
-    15% {
-        opacity: 0.35;
+    10% {
+        opacity: 1;
     }
 
     50% {
-        opacity: 0.2;
-        transform: translateY(-50vh) translateX(25px);
+        opacity: 0.5;
     }
 
-    85% {
-        opacity: 0.15;
+    90% {
+        opacity: 0.2;
     }
 
     100% {
+        transform: translateY(-110vh);
         opacity: 0;
-        transform: translateY(-110vh) translateX(-25px);
     }
 }
 
-
-@keyframes backgroundMusicFloat2 {
+@keyframes floatMusicUp2 {
 
     0% {
+        transform: translateY(0);
         opacity: 0;
-        transform: translateY(0) translateX(0);
     }
 
-    20% {
-        opacity: 0.25;
+    15% {
+        opacity: 0.7;
     }
 
-    55% {
-        opacity: 0.15;
-        transform: translateY(-55vh) translateX(-35px);
+    50% {
+        opacity: 0.3;
     }
 
     100% {
+        transform: translateY(-120vh);
         opacity: 0;
-        transform: translateY(-115vh) translateX(30px);
     }
 }
