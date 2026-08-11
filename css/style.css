@@ -71,18 +71,140 @@ header{
     z-index:1000;
 }
 
-.navbar{
-    width:min(1200px,92%);
-    margin:14px auto 0;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 20px;
-    border:1px solid rgba(255,255,255,.06);
-    border-radius:18px;
-    background:rgba(5,11,20,.28);
-    backdrop-filter:blur(14px);
-    -webkit-backdrop-filter:blur(14px);
+/* ================================
+   AURORA MENU HEADER
+================================ */
+
+.navbar {
+    position: fixed;
+    top: 18px;
+    left: 3%;
+    right: 3%;
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 28px;
+
+    background: rgba(3, 15, 27, 0.88);
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(0, 207, 255, 0.15);
+    border-radius: 25px;
+
+    z-index: 1000;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.brand span {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* MENU BUTTON */
+
+.menu-btn {
+    background: transparent;
+    border: 1px solid rgba(0, 207, 255, 0.35);
+    color: white;
+
+    padding: 12px 20px;
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: rgba(0, 207, 255, 0.12);
+    border-color: #00cfff;
+    box-shadow: 0 0 20px rgba(0, 207, 255, 0.25);
+}
+
+/* MENU OVERLAY */
+
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(2, 10, 20, 0.96);
+    backdrop-filter: blur(25px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.35s ease;
+
+    z-index: 2000;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* CLOSE */
+
+.menu-close {
+    position: absolute;
+    top: 35px;
+    right: 45px;
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+/* LINKS */
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 38px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    color: #00cfff;
+    text-shadow: 0 0 20px rgba(0, 207, 255, 0.7);
 }
 
 .logo {
