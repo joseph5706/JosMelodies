@@ -3044,6 +3044,56 @@ html {
     box-shadow: 0 0 25px rgba(30, 144, 255, 0.5);
     transform: translateY(-2px);
 }
+.btn-primary {
+    position: relative;
+    overflow: visible;
+}
+
+/* Sparkles around Listen Now */
+.btn-primary::before,
+.btn-primary::after {
+    position: absolute;
+    pointer-events: none;
+    font-size: 13px;
+    opacity: 0;
+    animation: musicSparkle 2.5s ease-in-out infinite;
+}
+
+/* Left-side music sparkle */
+.btn-primary::before {
+    content: "♪";
+    left: -18px;
+    top: 50%;
+    animation-delay: 0.3s;
+}
+
+/* Right-side sparkle */
+.btn-primary::after {
+    content: "✦";
+    right: -18px;
+    top: 30%;
+    animation-delay: 1.2s;
+}
+
+@keyframes musicSparkle {
+    0% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.6) rotate(0deg);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-18px) scale(1.1) rotate(25deg);
+    }
+}
 .hero-content {
     text-align: center;
     width: 100%;
