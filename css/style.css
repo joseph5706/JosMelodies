@@ -2227,47 +2227,39 @@ a {
 }
 
 .hero-scroll {
-    position: absolute;
-
+    position: static;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 8px;
-
-    margin-bottom: 22px;
-
+    justify-content: center;
+    margin-top: 28px;
     color: #ffffff;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 2.5px;
-    white-space: nowrap;
-
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    opacity: 0.85;
     z-index: 20;
 }
 
 .hero-scroll-arrow {
     display: inline-block;
     color: #00cfff;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 1;
-
-    text-shadow:
-        0 0 8px rgba(0, 207, 255, 0.8),
-        0 0 18px rgba(0, 207, 255, 0.5);
-
-    animation: heroScrollBounce 1.8s ease-in-out infinite;
+    margin-top: 5px;
+    animation: scrollBounce 1.5s ease-in-out infinite;
 }
 
-@keyframes heroScrollBounce {
+@keyframes scrollBounce {
     0%, 100% {
         transform: translateY(0);
     }
 
     50% {
-        transform: translateY(6px);
+        transform: translateY(7px);
     }
 }
-
 /* Keep hero visible */
 
 .hero {
