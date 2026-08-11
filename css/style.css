@@ -1121,7 +1121,7 @@ footer{
 @media(max-width:650px){
 
     .platforms{
-        padding-bottom:80px;
+        padding-bottom:50px;
     }
 
     .platform-grid{
@@ -1424,7 +1424,7 @@ footer{
 @media(max-width:750px){
 
     .about{
-        padding-bottom:80px;
+        padding-bottom:50px;
     }
 
     .about-card{
