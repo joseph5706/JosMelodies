@@ -1,4 +1,3 @@
-
 /* PROJECT AURORA — Updated Milestone 1.1 */
 
 *{
@@ -69,196 +68,106 @@ header{
     left:0;
     width:100%;
     z-index:1000;
+    pointer-events:none;
 }
 
-/* ================================
-   AURORA MENU HEADER
-================================ */
+/* Clean Aurora header — no box, border or dark highlight */
+.navbar{
+    position:relative;
+    width:100%;
+    height:72px;
+    margin:0;
+    padding:16px 32px;
 
-/* =========================================
-   AURORA HEADER
-========================================= */
-
-.navbar {
-    position: absolute;
-    top: 20px;
-    left: 3%;
-    right: 3%;
-
-    height: 65px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0 15px;
-
-    /* NO BOX */
-    background: transparent;
-    border: none;
-    box-shadow: none;
-
-    z-index: 1000;
-}
-
-/* LOGO + NAME */
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    text-decoration: none;
-}
-
-.brand img {
-    width: 48px;
-    height: 48px;
-
-    object-fit: cover;
-    border-radius: 50%;
-
-    display: block;
-}
-
-.brand span {
-    color: white;
-
-    font-size: 22px;
-    font-weight: 600;
-
-    text-decoration: none;
-}
-
-/* MENU */
-
-.menu-btn {
-    background: transparent;
-    border: none;
-
-    color: white;
-
-    padding: 8px 4px;
-
-    font-size: 14px;
-    font-weight: 600;
-
-    letter-spacing: 3px;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
-}
-
-.menu-btn:hover {
-    color: #00cfff;
-
-    text-shadow:
-        0 0 10px rgba(0, 207, 255, 0.7),
-        0 0 20px rgba(0, 207, 255, 0.4);
-}/* MENU OVERLAY */
-
-.menu-overlay {
-    position: fixed;
-    inset: 0;
-
-    background: rgba(2, 10, 20, 0.96);
-    backdrop-filter: blur(25px);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transition: 0.35s ease;
-
-    z-index: 2000;
-}
-
-.menu-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* CLOSE */
-
-.menu-close {
-    position: absolute;
-    top: 35px;
-    right: 45px;
-
-    background: none;
-    border: none;
-
-    color: white;
-    font-size: 28px;
-
-    cursor: pointer;
-}
-
-/* LINKS */
-
-.mobile-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 28px;
-}
-
-.mobile-menu a {
-    color: white;
-    text-decoration: none;
-
-    font-size: 38px;
-    font-weight: 600;
-
-    transition: 0.3s ease;
-}
-
-.mobile-menu a:hover {
-    color: #00cfff;
-    text-shadow: 0 0 20px rgba(0, 207, 255, 0.7);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-    flex-shrink: 0;
-}
-
-.logo img {
-    width: 48px;
-    height: 48px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 0 18px rgba(0, 200, 255, .18);
-}
-
-.logo span {
-    color: #ffffff;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.nav-links{
     display:flex;
-    gap:80px;
-    list-style:none;
+    justify-content:space-between;
+    align-items:center;
+
+    background:transparent;
+    border:none;
+    border-radius:0;
+    box-shadow:none;
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
+
+    pointer-events:auto;
+}
+
+/* Header brand */
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    flex-shrink:0;
+}
+
+.brand-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:38px;
+    height:38px;
+    color:#4f8cff;
+    font-size:34px;
+    line-height:1;
+    text-shadow:
+        0 0 10px rgba(0,140,255,.7),
+        0 0 22px rgba(0,140,255,.35);
+}
+
+.brand-name{
+    color:#fff;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:0;
+    text-decoration:none;
+}
+
+/* MENU — plain text/icon, no button box */
+.menu-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-left:auto;
+    padding:8px 4px;
+
+    background:transparent;
+    border:none;
+    outline:none;
+
+    color:#fff;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:3px;
+    white-space:nowrap;
+    cursor:pointer;
+
+    transition:color .3s ease,text-shadow .3s ease;
+}
+
+.menu-icon{
+    font-size:20px;
+    line-height:1;
+}
+
+.menu-btn:hover{
+    color:var(--primary);
+    text-shadow:
+        0 0 10px rgba(0,207,255,.8),
+        0 0 20px rgba(0,207,255,.4);
+}
+
+/* Keep legacy nav hidden if it still exists in the HTML */
+.nav-links{
+    display:none;
 }
 
 .nav-links a{
     color:#d6e8f5;
     text-decoration:none;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:var(--primary);
 }
 
 .hero{
@@ -268,7 +177,7 @@ header{
     align-items:center;
     flex-direction:column;
     text-align:center;
-    padding:95px 20px 40px;
+    padding:120px 20px 60px;
     position:relative;
 }
 
@@ -283,9 +192,9 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
-    width:170px;
-    height:170px;
-    margin-bottom:0;
+    width:240px;
+    height:240px;
+    margin-bottom:25px;
     animation:fadeUp 1.2s ease;
 }
 
@@ -309,8 +218,8 @@ header{
 
 .hero-logo{
     position:relative;
-    width:150px;
-    height:150px;
+    width:180px;
+    height:180px;
     object-fit:cover;
     border-radius:50%;
     filter:
@@ -328,13 +237,14 @@ header{
 }
 
 .hero h1{
-    font-size:clamp(2.8rem,6vw,5rem);
+    font-size:clamp(3rem,8vw,6rem);
     font-family:'Space Grotesk',sans-serif;
-    letter-spacing:6px;
+    letter-spacing:8px;
     margin-bottom:15px;
     line-height:1;
     animation:fadeUp 1.4s ease;
 }
+
 .hero h2{
     color:var(--primary);
     font-size:clamp(1.3rem,2vw,2rem);
@@ -346,7 +256,7 @@ header{
 .hero p{
     color:var(--text-secondary);
     font-size:1.05rem;
-    margin-bottom:28px;
+    margin-bottom:45px;
     animation:fadeUp 1.8s ease;
 }
 
@@ -437,26 +347,38 @@ footer{
 
 @media(max-width:850px){
     .navbar{
-        width:94%;
-        padding:12px 15px;
-        margin-top:10px;
+        width:100%;
+        height:64px;
+        padding:12px 20px;
     }
 
-    .nav-links{display:none;}
+    .brand{gap:8px;}
 
-    .logo{gap:10px;}
+    .brand-icon{
+        width:34px;
+        height:34px;
+        font-size:30px;
+    }
 
-    .logo img{
-        width:38px;
-        height:38px;
+    .brand-name{
+        font-size:19px;
+    }
+
+    .menu-btn{
+        font-size:12px;
+        letter-spacing:2.5px;
+    }
+
+    .menu-icon{
+        font-size:18px;
     }
 
     .hero{padding:110px 20px 50px;}
 
     .hero-logo-wrapper{
-        width:170px;
-        height:170px;
-        margin-bottom:12px;
+        width:200px;
+        height:200px;
+        margin-bottom:25px;
     }
 
     .logo-glow{
@@ -488,15 +410,16 @@ footer{
     }
 
     .btn{
-        width:260px;
+        width:230px;
         text-align:center;
+        padding:13px 24px;
     }
 
     .cursor-glow{display:none;}
 }
 
 @media(max-width:480px){
-    .logo span{font-size:1rem;}
+    .brand-name{font-size:18px;}
 
     .hero-logo-wrapper{
         width:175px;
@@ -2346,11 +2269,10 @@ a {
         padding: 16px 25px;
     }
 }
-/* =========================================
-   HERO TAGLINE + SCROLL
-========================================= */
+/* HERO TAGLINE + SCROLL */
 
 .hero-tagline-row {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -2362,19 +2284,19 @@ a {
 }
 
 .hero-scroll {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    left: calc(50% + 230px);
 
-    margin-top: 18px;
-    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 22px;
 
     color: #ffffff;
     font-size: 10px;
     font-weight: 500;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
     white-space: nowrap;
 
     z-index: 20;
@@ -2383,10 +2305,9 @@ a {
 .hero-scroll-arrow {
     display: inline-block;
     color: #00cfff;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1;
-    margin-top: 5px;
 
     text-shadow:
         0 0 8px rgba(0, 207, 255, 0.8),
@@ -2401,9 +2322,10 @@ a {
     }
 
     50% {
-        transform: translateY(7px);
+        transform: translateY(6px);
     }
 }
+
 /* Keep hero visible */
 
 .hero {
