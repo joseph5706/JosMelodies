@@ -3323,183 +3323,126 @@ html {
     }
 }
 /* =========================================
-   SHOOTING STARS
+   JOSMELODIES SHOOTING STARS
+   FINAL VERSION
    ========================================= */
 
-.website-music-sparkles .shooting-star {
-    position: absolute;
+.shooting-star {
+    position: absolute !important;
 
-    width: 100px;
-    height: 2px;
+    width: 130px !important;
+    height: 2px !important;
 
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(180, 225, 255, 0.8),
+        rgba(150, 220, 255, 0.8),
         #ffffff
-    );
+    ) !important;
 
-    border-radius: 50%;
+    border-radius: 50% !important;
 
-    opacity: 0;
+    opacity: 0 !important;
 
-    /* IMPORTANT: override music particle animation */
-    animation-name: shootingStar;
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    pointer-events: none !important;
 
     box-shadow:
         0 0 5px #ffffff,
         0 0 12px #4da6ff,
         0 0 25px #1e90ff,
-        0 0 40px rgba(30, 144, 255, 0.7);
-
-    pointer-events: none;
-    z-index: 2;
+        0 0 40px rgba(30, 144, 255, 0.7) !important;
 }
 
 
-/* Star positions */
-
-.website-music-sparkles .star-1 {
-    top: 15%;
-    left: 85%;
-    animation-delay: 0s;
-}
-
-.website-music-sparkles .star-2 {
-    top: 40%;
-    left: 75%;
-    animation-delay: 5s;
-}
-
-.website-music-sparkles .star-3 {
-    top: 65%;
-    left: 90%;
-    animation-delay: 10s;
-}
-
-
-/* Shooting animation */
-
-@keyframes shootingStar {
-
-    0% {
-        opacity: 0;
-        transform: translate(0, 0) rotate(-35deg);
-    }
-
-    2% {
-        opacity: 1;
-    }
-
-    8% {
-        opacity: 1;
-        transform: translate(-120px, 80px) rotate(-35deg);
-    }
-
-    12% {
-        opacity: 0;
-        transform: translate(-220px, 150px) rotate(-35deg);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translate(-220px, 150px) rotate(-35deg);
-    }
-}
 /* =========================================
-   JOSMELODIES — REAL SHOOTING STARS
-   DESKTOP BOTH DIRECTIONS
+   DESKTOP
    ========================================= */
 
 @media (min-width: 701px) {
 
-    /* STAR 1 — LEFT TO RIGHT */
-    .website-music-sparkles .star-1 {
-        top: 8%;
-        left: -160px;
-        right: auto;
+    /* LEFT → RIGHT */
+    .star-1 {
+        top: 10% !important;
+        left: -150px !important;
+        right: auto !important;
 
-        animation: shootFromLeft 15s linear infinite !important;
+        animation: starLeftRight 15s linear infinite !important;
+        animation-delay: 0s !important;
     }
 
-    /* STAR 2 — RIGHT TO LEFT */
-    .website-music-sparkles .star-2 {
-        top: 30%;
-        right: -160px;
-        left: auto;
 
-        animation: shootFromRight 15s linear infinite !important;
-    }
+    /* RIGHT → LEFT */
+    .star-2 {
+        top: 32% !important;
+        right: -150px !important;
+        left: auto !important;
 
-    /* STAR 3 — LEFT TO RIGHT */
-    .website-music-sparkles .star-3 {
-        top: 52%;
-        left: -160px;
-        right: auto;
-
-        animation: shootFromLeft 15s linear infinite !important;
-        animation-delay: 10s !important;
-    }
-
-    /* Make sure STAR 2 starts 5 seconds later */
-    .website-music-sparkles .star-2 {
+        animation: starRightLeft 15s linear infinite !important;
         animation-delay: 5s !important;
+    }
+
+
+    /* LEFT → RIGHT */
+    .star-3 {
+        top: 55% !important;
+        left: -150px !important;
+        right: auto !important;
+
+        animation: starLeftRight 15s linear infinite !important;
+        animation-delay: 10s !important;
     }
 }
 
 
 /* =========================================
-   LEFT → RIGHT DIAGONAL
+   LEFT → RIGHT
    ========================================= */
 
-@keyframes shootFromLeft {
+@keyframes starLeftRight {
 
     0% {
-        opacity: 0;
+        opacity: 0 !important;
         transform: translate(0, 0) rotate(35deg);
     }
 
     3% {
-        opacity: 1;
+        opacity: 1 !important;
     }
 
-    15% {
-        opacity: 0;
+    14% {
+        opacity: 0 !important;
         transform: translate(120vw, 65vh) rotate(35deg);
     }
 
     100% {
-        opacity: 0;
+        opacity: 0 !important;
         transform: translate(120vw, 65vh) rotate(35deg);
     }
 }
 
 
 /* =========================================
-   RIGHT → LEFT DIAGONAL
+   RIGHT → LEFT
    ========================================= */
 
-@keyframes shootFromRight {
+@keyframes starRightLeft {
 
     0% {
-        opacity: 0;
+        opacity: 0 !important;
         transform: translate(0, 0) rotate(-35deg);
     }
 
     3% {
-        opacity: 1;
+        opacity: 1 !important;
     }
 
-    15% {
-        opacity: 0;
+    14% {
+        opacity: 0 !important;
         transform: translate(-120vw, 65vh) rotate(-35deg);
     }
 
     100% {
-        opacity: 0;
+        opacity: 0 !important;
         transform: translate(-120vw, 65vh) rotate(-35deg);
     }
 }
