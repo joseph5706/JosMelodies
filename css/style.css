@@ -3410,49 +3410,52 @@ html {
     }
 }
 /* =========================================
-   REAL SHOOTING STARS — DESKTOP
+   DESKTOP SHOOTING STARS — BOTH DIRECTIONS
    ========================================= */
 
 @media (min-width: 701px) {
 
-    /* LEFT → RIGHT, DIAGONALLY */
+    /* LEFT → RIGHT */
     .website-music-sparkles .star-1 {
         top: 10%;
-        left: -120px;
-        animation-name: shootingDiagonalRight;
+        left: -150px;
+        right: auto;
+
+        animation-name: shootRight;
         animation-delay: 0s;
     }
 
-    /* RIGHT → LEFT, DIAGONALLY */
+    /* RIGHT → LEFT */
     .website-music-sparkles .star-2 {
-        top: 25%;
+        top: 30%;
+        right: -150px;
         left: auto;
-        right: -120px;
-        animation-name: shootingDiagonalLeft;
+
+        animation-name: shootLeft;
         animation-delay: 5s;
     }
 
-    /* LEFT → RIGHT, DIAGONALLY */
+    /* LEFT → RIGHT */
     .website-music-sparkles .star-3 {
-        top: 45%;
-        left: -120px;
-        animation-name: shootingDiagonalRight;
+        top: 50%;
+        left: -150px;
+        right: auto;
+
+        animation-name: shootRight;
         animation-delay: 10s;
     }
 }
 
 
 /* =========================================
-   DIAGONAL LEFT → RIGHT
+   LEFT → RIGHT DIAGONAL
    ========================================= */
 
-@keyframes shootingDiagonalRight {
+@keyframes shootRight {
 
     0% {
         opacity: 0;
-        transform:
-            translate(0, 0)
-            rotate(35deg);
+        transform: translate(0, 0) rotate(35deg);
     }
 
     2% {
@@ -3461,9 +3464,7 @@ html {
 
     12% {
         opacity: 1;
-        transform:
-            translate(120vw, 70vh)
-            rotate(35deg);
+        transform: translate(120vw, 65vh) rotate(35deg);
     }
 
     15% {
@@ -3477,16 +3478,14 @@ html {
 
 
 /* =========================================
-   DIAGONAL RIGHT → LEFT
+   RIGHT → LEFT DIAGONAL
    ========================================= */
 
-@keyframes shootingDiagonalLeft {
+@keyframes shootLeft {
 
     0% {
         opacity: 0;
-        transform:
-            translate(0, 0)
-            rotate(-35deg);
+        transform: translate(0, 0) rotate(-35deg);
     }
 
     2% {
@@ -3495,9 +3494,7 @@ html {
 
     12% {
         opacity: 1;
-        transform:
-            translate(-120vw, 70vh)
-            rotate(-35deg);
+        transform: translate(-120vw, 65vh) rotate(-35deg);
     }
 
     15% {
