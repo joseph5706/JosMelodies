@@ -3147,12 +3147,14 @@ html {
     position: absolute;
     bottom: -30px;
 
-    color: rgba(77, 166, 255, 0.45);
-    font-size: 15px;
+    color: rgba(100, 190, 255, 0.75);
+    font-size: 16px;
 
     text-shadow:
         0 0 6px #1e90ff,
-        0 0 14px rgba(30, 144, 255, 0.7);
+        0 0 14px #1e90ff,
+        0 0 25px rgba(30, 144, 255, 0.9),
+        0 0 40px rgba(30, 144, 255, 0.5);
 
     opacity: 0;
 
