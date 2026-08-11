@@ -2848,3 +2848,12 @@ a {
     font-size: 32px !important;
     cursor: pointer !important;
 }
+.buttons {
+    margin-top: 20px;
+}
+
+.btn.primary {
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 30px;
+}
