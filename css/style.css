@@ -2471,3 +2471,97 @@ a {
     }
 
 }
+/* =========================================
+   FINAL NAVBAR + HERO FIX
+   ========================================= */
+
+/* REMOVE THE BLACK NAVBAR BAR */
+.navbar {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+
+    position: absolute !important;
+    top: 20px !important;
+    left: 20px !important;
+    right: 20px !important;
+
+    z-index: 1000 !important;
+}
+
+/* Keep the brand clean */
+.brand {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* MENU — no box around it */
+.menu-btn {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* =========================================
+   HERO LOGO → TITLE GAP
+   ========================================= */
+
+.hero-logo-wrapper {
+    margin-bottom: 5px !important;
+}
+
+/* Pull JOSMELODIES closer to the logo */
+.hero h1 {
+    margin-top: 5px !important;
+}
+
+/* =========================================
+   SCROLL DOWN
+   Put it DIRECTLY under the buttons
+   ========================================= */
+
+.hero-scroll {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    margin-top: 18px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+}
+
+/* Arrow directly below SCROLL DOWN */
+.hero-scroll-arrow {
+    display: block !important;
+    margin-top: 5px !important;
+}
+
+/* =========================================
+   KEEP HERO CONTENT CENTERED
+   ========================================= */
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Make sure buttons stay together */
+.buttons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+}
