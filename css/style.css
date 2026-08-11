@@ -3002,17 +3002,17 @@ a {
 
     /* JOSMELODIES title */
     .hero h1 {
-        margin-bottom: 45px !important;
+        margin-bottom: 55px !important;
     }
 
     /* Musical Artist text */
     .hero > p {
-        margin-bottom: 55px !important;
+        margin-bottom: 65px !important;
     }
 
     /* Listen Now button */
     .buttons {
-        margin-bottom: 50px !important;
+        margin-bottom: 60px !important;
     }
 
     /* Scroll Down */
