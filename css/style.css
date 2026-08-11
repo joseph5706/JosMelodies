@@ -2403,7 +2403,7 @@ a {
 }
 
 .hero-tagline-row h2 {
-    margin-bottom: 22px;
+    margin-bottom: 10px;
 }
 
 .hero-scroll {
@@ -2662,7 +2662,7 @@ a {
 }
 
 .hero-content > p {
-    margin-top: 10 !important;
+    margin-top: 0 !important;
     margin-bottom: 18px !important;
 }
 /* FIX GAP BETWEEN TAGLINE AND ARTIST TEXT */
