@@ -2857,3 +2857,17 @@ a {
     font-size: 16px;
     border-radius: 30px;
 }
+/* Reduce gap between HERO and Latest Release */
+.hero {
+    min-height: auto !important;
+    height: auto !important;
+    padding-bottom: 20px !important;
+}
+
+.hero-scroll {
+    margin-bottom: 0 !important;
+}
+
+.latest-release {
+    margin-top: -60px !important;
+}
