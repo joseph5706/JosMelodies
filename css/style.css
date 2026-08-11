@@ -3410,39 +3410,43 @@ html {
     }
 }
 /* =========================================
-   DESKTOP SHOOTING STARS — BOTH DIRECTIONS
+   JOSMELODIES — REAL SHOOTING STARS
+   DESKTOP BOTH DIRECTIONS
    ========================================= */
 
 @media (min-width: 701px) {
 
-    /* LEFT → RIGHT */
+    /* STAR 1 — LEFT TO RIGHT */
     .website-music-sparkles .star-1 {
-        top: 10%;
-        left: -150px;
+        top: 8%;
+        left: -160px;
         right: auto;
 
-        animation-name: shootRight;
-        animation-delay: 0s;
+        animation: shootFromLeft 15s linear infinite !important;
     }
 
-    /* RIGHT → LEFT */
+    /* STAR 2 — RIGHT TO LEFT */
     .website-music-sparkles .star-2 {
         top: 30%;
-        right: -150px;
+        right: -160px;
         left: auto;
 
-        animation-name: shootLeft;
-        animation-delay: 5s;
+        animation: shootFromRight 15s linear infinite !important;
     }
 
-    /* LEFT → RIGHT */
+    /* STAR 3 — LEFT TO RIGHT */
     .website-music-sparkles .star-3 {
-        top: 50%;
-        left: -150px;
+        top: 52%;
+        left: -160px;
         right: auto;
 
-        animation-name: shootRight;
-        animation-delay: 10s;
+        animation: shootFromLeft 15s linear infinite !important;
+        animation-delay: 10s !important;
+    }
+
+    /* Make sure STAR 2 starts 5 seconds later */
+    .website-music-sparkles .star-2 {
+        animation-delay: 5s !important;
     }
 }
 
@@ -3451,28 +3455,25 @@ html {
    LEFT → RIGHT DIAGONAL
    ========================================= */
 
-@keyframes shootRight {
+@keyframes shootFromLeft {
 
     0% {
         opacity: 0;
         transform: translate(0, 0) rotate(35deg);
     }
 
-    2% {
+    3% {
         opacity: 1;
-    }
-
-    12% {
-        opacity: 1;
-        transform: translate(120vw, 65vh) rotate(35deg);
     }
 
     15% {
         opacity: 0;
+        transform: translate(120vw, 65vh) rotate(35deg);
     }
 
     100% {
         opacity: 0;
+        transform: translate(120vw, 65vh) rotate(35deg);
     }
 }
 
@@ -3481,27 +3482,24 @@ html {
    RIGHT → LEFT DIAGONAL
    ========================================= */
 
-@keyframes shootLeft {
+@keyframes shootFromRight {
 
     0% {
         opacity: 0;
         transform: translate(0, 0) rotate(-35deg);
     }
 
-    2% {
+    3% {
         opacity: 1;
-    }
-
-    12% {
-        opacity: 1;
-        transform: translate(-120vw, 65vh) rotate(-35deg);
     }
 
     15% {
         opacity: 0;
+        transform: translate(-120vw, 65vh) rotate(-35deg);
     }
 
     100% {
         opacity: 0;
+        transform: translate(-120vw, 65vh) rotate(-35deg);
     }
 }
