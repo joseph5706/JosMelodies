@@ -1,843 +1,605 @@
-<!DOCTYPE html>
-<html lang="en">
+\<!DOCTYPE html>
+\<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+\<head>
+    \<link rel="stylesheet"
+      href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css)">
 
-    <meta name="description" content="Official website of JosMelodies - Producer, Composer & Artist.">
-    <meta name="theme-color" content="#050B14">
+    \<meta charset="UTF-8">
+    \<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    \<meta name="description" content="Official website of JosMelodies - Producer, Composer & Artist.">
+    \<meta name="theme-color" content="#050B14">
 
-    <title>JosMelodies — Music That Tells a Story</title>
+    \<link href="[https://fonts.googleapis.com/css2?family=Space+Grotesk\:wght@400;500;700&family=Inter\:wght@300;400;500;600&display=swap](https://fonts.googleapis.com/css2?family=Space+Grotesk\:wght@400;500;700\&family=Inter\:wght@300;400;500;600\&display=swap)" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet"
-    >
+    \<link rel="stylesheet" href="css/style.css">
 
-    <!-- Font Awesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
+    \<link rel="icon" href="assets/josmelodies-logo.png">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
+\</head>
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/logo.jpg">
+\<body>
 
-</head>
+    \<div class="background">\</div>
 
-<body>
+    \<div class="cursor-glow">\</div>
 
-    <div class="background"></div>
+    \<!-- NAVBAR -->
 
-    <div class="cursor-glow"></div>
+   \<header class="navbar">
 
+    \<a href="[https://josmelodies.vercel.app/](https://josmelodies.vercel.app/)" class="brand">
+        \<span class="brand-icon">♪\</span>
+        \<span class="brand-name">JosMelodies\</span>
+    \</a>
 
-    <!-- =========================================
-         NAVBAR
-    ========================================== -->
+    \<button class="menu-btn" id="menuBtn">
+        \<span class="menu-icon">☰\</span>
+        \<span>MENU\</span>
+    \</button>
 
-    <header class="navbar">
+\</header>
 
-        <a
-            href="https://josmelodies.vercel.app/"
-            class="brand"
-            aria-label="JosMelodies Home"
-        >
-            <span class="brand-icon">♪</span>
-            <span class="brand-name">JosMelodies</span>
-        </a>
+\<div class="menu-overlay" id="menuOverlay">
 
-        <button
-            class="menu-btn"
-            id="menuBtn"
-            type="button"
-            aria-label="Open menu"
-            aria-controls="menuOverlay"
-            aria-expanded="false"
-        >
-            <span class="menu-icon">☰</span>
-            <span>MENU</span>
-        </button>
+    \<button class="menu-close" id="menuClose">✕\</button>
 
-    </header>
+    \<nav class="mobile-menu">
 
+        \<a href="[https://josmelodies.vercel.app/](https://josmelodies.vercel.app/)">Home\</a>
+        \<a href="[https://josmelodies.carrd.co/](https://josmelodies.carrd.co/)">Music\</a>
+        \<a href="[https://www.youtube.com/@JosMelodies/releases](https://www.youtube.com/@JosMelodies/releases)">Videos\</a>
+        \<a href="[https://josmelodies.vercel.app/#](https://josmelodies.vercel.app/#)">About\</a>
+        \<a href="[https://josmelodies.vercel.app/#](https://josmelodies.vercel.app/#)">Contact\</a>
 
-    <!-- =========================================
-         MENU OVERLAY
-    ========================================== -->
+    \</nav>
 
-    <div class="menu-overlay" id="menuOverlay">
+\</div>    \<!-- HERO -->
 
-        <button
-            class="menu-close"
-            id="menuClose"
-            type="button"
-            aria-label="Close menu"
-        >
-            ✕
-        </button>
+    \<section class="hero">
 
-        <nav class="mobile-menu">
+        \<div class="hero-content">
 
-            <a href="https://josmelodies.vercel.app/">
-                Home
-            </a>
+            \<div class="hero-logo-wrapper">
 
-            <a href="https://josmelodies.carrd.co/">
-                Music
-            </a>
+                \<div class="logo-glow">\</div>
 
-            <a href="https://www.youtube.com/@JosMelodies/releases">
-                Videos
-            </a>
-
-            <a href="https://josmelodies.vercel.app/#about">
-                About
-            </a>
-
-            <a href="https://josmelodies.vercel.app/#contact">
-                Contact
-            </a>
-
-        </nav>
-
-    </div>
-
-
-    <!-- =========================================
-         HERO
-    ========================================== -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <div class="hero-logo-wrapper">
-
-                <div class="logo-glow"></div>
-
-                <img
+                \<img
                     src="assets/logo.jpg"
                     alt="JosMelodies"
                     class="hero-logo"
-                >
+                \>
+     \</div>
 
-            </div>
+ \<h1>JOSMELODIES\</h1>
 
+\<div class="hero-tagline-row">
+    \<h2>Music That Tells a Story\</h2>
+\</div>
 
-            <h1>JOSMELODIES</h1>
+\</div>
 
+\<p> Musical Artist • Producer • Composer • \</p>
 
-            <div class="hero-tagline-row">
+            \<div class="buttons">
 
-                <h2>Music That Tells a Story</h2>
-
-            </div>
-
-
-            <p>
-                Musical Artist • Producer • Composer •
-            </p>
-
-
-            <div class="buttons">
-
-                <a
-                    href="https://www.youtube.com/@JosMelodies/releases"
-                    class="btn primary"
-                >
+                \<a href="[https://www.youtube.com/@JosMelodies/releases](https://www.youtube.com/@JosMelodies/releases)" class="btn primary">
                     Listen Now
-                </a>
+                \</a>
 
-                <a
-                    href="https://josmelodies.carrd.co/"
-                    class="btn secondary"
-                >
+                \<a href="[https://josmelodies.carrd.co/](https://josmelodies.carrd.co/)" class="btn secondary">
                     Explore Music
-                </a>
+                \</a>
 
-            </div>
+            \</div>
+        \<div class="hero-scroll">
+    \<span>SCROLL DOWN\</span>
+    \<span class="hero-scroll-arrow">↓\</span>
+\</div>
 
+        \</div>
 
-            <div class="hero-scroll">
+    \</section>
+    \<!-- =========================
+     LATEST RELEASE
+\========================== -->
 
-                <span>SCROLL DOWN</span>
+\<section class="latest-release" id="music">
 
-                <span class="hero-scroll-arrow">↓</span>
+    \<div class="section-heading">
 
-            </div>
+        \<span class="section-label">LATEST RELEASE\</span>
 
-        </div>
+        \<h2>Feel the Music\</h2>
 
-    </section>
+        \<p>
+            Listen to the latest sounds from JosMelodies.
+        \</p>
 
+    \</div>
 
-    <!-- =========================================
-         LATEST RELEASE
-    ========================================== -->
+    \<div class="release-card">
 
-    <section class="latest-release" id="latest-release">
+        \<div class="release-artwork">
 
-        <div class="section-heading">
+            \<img
+                src="assets/logo.jpg"
+                alt="JosMelodies Latest Release"
+            \>
 
-            <span class="section-label">LATEST RELEASE</span>
+            \<div class="artwork-glow">\</div>
 
-            <h2>Feel the Music</h2>
+        \</div>
 
-            <p>
-                Listen to the latest sounds from JosMelodies.
-            </p>
+        \<div class="release-info">
 
-        </div>
+            \<span class="release-type">LATEST SINGLE\</span>
 
+            \<h3>Your Song Title\</h3>
 
-        <div class="release-card">
+            \<p class="release-date">
+                2026 • JosMelodies
+            \</p>
 
-            <div class="release-artwork">
+            \<p class="release-description">
+                A new musical journey from JosMelodies.
+                More details coming soon.
+            \</p>
 
-                <img
-                    src="assets/logo.jpg"
-                    alt="JosMelodies Latest Release"
-                >
+            \<div class="release-buttons">
 
-                <div class="artwork-glow"></div>
+                \<a href="#" class="release-btn">
+                    ▶ Listen Now
+                \</a>
 
-            </div>
+            \</div>
 
+        \</div>
 
-            <div class="release-info">
+    \</div>
 
-                <span class="release-type">LATEST SINGLE</span>
+\</section>
 
-                <h3>Your Song Title</h3>
+    \<!-- =========================
+     UPCOMING MUSIC
+\========================== -->
 
-                <p class="release-date">
-                    2026 • JosMelodies
-                </p>
+\<section class="upcoming-music">
 
-                <p class="release-description">
-                    A new musical journey from JosMelodies.
-                    More details coming soon.
-                </p>
+    \<div class="upcoming-content">
 
+        \<span class="section-label">COMING SOON\</span>
 
-                <div class="release-buttons">
+        \<h2>A New Chapter Begins\</h2>
 
-                    <a href="#" class="release-btn">
-                        ▶ Listen Now
-                    </a>
+        \<p>
+            New music is on the way.
+            Stay tuned for what's coming next from JosMelodies.
+        \</p>
 
-                </div>
+        \<div class="coming-badge">
+            \<span class="pulse-dot">\</span>
+            NEW MUSIC IN PROGRESS
+        \</div>
 
-            </div>
+    \</div>
 
-        </div>
+\</section>
+    \<!-- =========================
+     STREAMING PLATFORMS
+\========================== -->
 
-    </section>
+\<section class="platforms" id="platforms">
 
+    \<div class="section-heading">
 
-    <!-- =========================================
-         UPCOMING MUSIC
-    ========================================== -->
+        \<span class="section-label">LISTEN EVERYWHERE\</span>
 
-    <section class="upcoming-music">
+        \<h2>Find My Music\</h2>
 
-        <div class="upcoming-content">
+        \<p>
+            Follow JosMelodies and listen on your favorite platforms.
+        \</p>
 
-            <span class="section-label">COMING SOON</span>
+    \</div>
 
-            <h2>A New Chapter Begins</h2>
+    \<div class="platform-grid">
 
-            <p>
-                New music is on the way.
-                Stay tuned for what's coming next from JosMelodies.
-            </p>
+        \<!-- SPOTIFY -->
 
-            <div class="coming-badge">
+        \<a href="#" class="platform-card spotify">
 
-                <span class="pulse-dot"></span>
+            \<div class="floating-icon">
+                \<i class="fa-brands fa-spotify">\</i>
+            \</div>
 
-                NEW MUSIC IN PROGRESS
+            \<div class="platform-info">
+                \<span class="platform-name">Spotify\</span>
+                \<span class="platform-subtitle">Listen on Spotify\</span>
+            \</div>
 
-            </div>
+            \<div class="platform-arrow">
+                \<i class="fa-solid fa-arrow-up-right-from-square">\</i>
+            \</div>
 
-        </div>
+        \</a>
 
-    </section>
 
+        \<!-- YOUTUBE -->
 
-    <!-- =========================================
-         STREAMING PLATFORMS
-    ========================================== -->
+        \<a href="#" class="platform-card youtube">
 
-    <section class="platforms" id="platforms">
+            \<div class="floating-icon">
+                \<i class="fa-brands fa-youtube">\</i>
+            \</div>
 
-        <div class="section-heading">
+            \<div class="platform-info">
+                \<span class="platform-name">YouTube\</span>
+                \<span class="platform-subtitle">Watch & listen\</span>
+            \</div>
 
-            <span class="section-label">LISTEN EVERYWHERE</span>
+            \<div class="platform-arrow">
+                \<i class="fa-solid fa-arrow-up-right-from-square">\</i>
+            \</div>
 
-            <h2>Find My Music</h2>
+        \</a>
 
-            <p>
-                Follow JosMelodies and listen on your favorite platforms.
-            </p>
 
-        </div>
+        \<!-- APPLE MUSIC -->
 
+        \<a href="#" class="platform-card apple">
 
-        <div class="platform-grid">
+            \<div class="floating-icon">
+                \<i class="fa-brands fa-apple">\</i>
+            \</div>
 
-            <!-- SPOTIFY -->
+            \<div class="platform-info">
+                \<span class="platform-name">Apple Music\</span>
+                \<span class="platform-subtitle">Listen on Apple Music\</span>
+            \</div>
 
-            <a href="#" class="platform-card spotify">
+            \<div class="platform-arrow">
+                \<i class="fa-solid fa-arrow-up-right-from-square">\</i>
+            \</div>
 
-                <div class="floating-icon">
-                    <i class="fa-brands fa-spotify"></i>
-                </div>
+        \</a>
 
-                <div class="platform-info">
-                    <span class="platform-name">Spotify</span>
-                    <span class="platform-subtitle">Listen on Spotify</span>
-                </div>
 
-                <div class="platform-arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </div>
+        \<!-- SOUNDCLOUD -->
 
-            </a>
+        \<a href="#" class="platform-card soundcloud">
 
+            \<div class="floating-icon">
+                \<i class="fa-brands fa-soundcloud">\</i>
+            \</div>
 
-            <!-- YOUTUBE -->
+            \<div class="platform-info">
+                \<span class="platform-name">SoundCloud\</span>
+                \<span class="platform-subtitle">Listen on SoundCloud\</span>
+            \</div>
 
-            <a
-                href="https://www.youtube.com/@JosMelodies/releases"
-                class="platform-card youtube"
-            >
+            \<div class="platform-arrow">
+                \<i class="fa-solid fa-arrow-up-right-from-square">\</i>
+            \</div>
 
-                <div class="floating-icon">
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
+        \</a>
 
-                <div class="platform-info">
-                    <span class="platform-name">YouTube</span>
-                    <span class="platform-subtitle">Watch & listen</span>
-                </div>
+    \</div>
 
-                <div class="platform-arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </div>
+\</section>
+    \<!-- =========================
+     ABOUT JOSMELODIES
+\========================== -->
 
-            </a>
+\<section class="about" id="about">
 
+    \<div class="section-heading">
 
-            <!-- APPLE MUSIC -->
+        \<span class="section-label">THE ARTIST\</span>
 
-            <a href="#" class="platform-card apple">
+        \<h2>About JosMelodies\</h2>
 
-                <div class="floating-icon">
-                    <i class="fa-brands fa-apple"></i>
-                </div>
+    \</div>
 
-                <div class="platform-info">
-                    <span class="platform-name">Apple Music</span>
-                    <span class="platform-subtitle">Listen on Apple Music</span>
-                </div>
+    \<div class="about-card">
 
-                <div class="platform-arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </div>
+        \<div class="about-image">
 
-            </a>
+            \<div class="about-glow">\</div>
 
+            \<img
+                src="assets/logo.jpg"
+                alt="JosMelodies"
+            \>
 
-            <!-- SOUNDCLOUD -->
+        \</div>
 
-            <a href="#" class="platform-card soundcloud">
+        \<div class="about-content">
 
-                <div class="floating-icon">
-                    <i class="fa-brands fa-soundcloud"></i>
-                </div>
+            \<span class="about-tag">
+                PRODUCER • COMPOSER • ARTIST
+            \</span>
 
-                <div class="platform-info">
-                    <span class="platform-name">SoundCloud</span>
-                    <span class="platform-subtitle">Listen on SoundCloud</span>
-                </div>
+            \<h3>Music built from\<br>emotion and energy.\</h3>
 
-                <div class="platform-arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </div>
+            \<p>
+                JosMelodies is an independent music project focused on
+                creating melodic electronic music with emotion, atmosphere
+                and energy at its core.
+            \</p>
 
-            </a>
+            \<p>
+                From progressive house to EDM, every track is built layer
+                by layer — turning melodies, sounds and ideas into stories
+                that listeners can feel.
+            \</p>
 
-        </div>
+            \<div class="about-stats">
 
-    </section>
+                \<div class="stat">
+                    \<strong>2022\</strong>
+                    \<span>Started Creating\</span>
+                \</div>
 
+                \<div class="stat">
+                    \<strong>EDM\</strong>
+                    \<span>Music Style\</span>
+                \</div>
 
-    <!-- =========================================
-         ABOUT JOSMELODIES
-    ========================================== -->
+                \<div class="stat">
+                    \<strong>FL Studio\</strong>
+                    \<span>Main DAW\</span>
+                \</div>
 
-    <section class="about" id="about">
+            \</div>
 
-        <div class="section-heading">
+        \</div>
 
-            <span class="section-label">THE ARTIST</span>
+    \</div>
 
-            <h2>About JosMelodies</h2>
+\</section>
+    \<!-- =========================
+     MILESTONE 1.6 — MUSIC
+\========================= -->
+\<section class="music-section" id="music">
 
-        </div>
+    \<div class="section-heading">
+        \<span class="section-label">MY MUSIC\</span>
+        \<h2>Latest \<span>Releases\</span>\</h2>
+        \<p>Listen to my latest music and explore my releases.\</p>
+    \</div>
 
+    \<!-- Featured Release -->
+    \<div class="featured-release">
 
-        <div class="about-card">
+        \<div class="featured-artwork">
+            \<img src="images/cover.jpg" alt="JosMelodies latest release">
+            \<div class="artwork-glow">\</div>
+        \</div>
 
-            <div class="about-image">
+        \<div class="featured-info">
+            \<span class="release-type">LATEST RELEASE\</span>
 
-                <div class="about-glow"></div>
+            \<h3>Your Song Title\</h3>
 
-                <img
-                    src="assets/logo.jpg"
-                    alt="JosMelodies"
-                >
+            \<p class="release-meta">
+                JosMelodies · 2026 · Single
+            \</p>
 
-            </div>
+            \<p class="release-description">
+                My latest release — blending melodic sounds,
+                electronic production and the JosMelodies vibe.
+            \</p>
 
+            \<div class="music-buttons">
+                \<a href="#" class="music-btn primary">
+                    ▶ Listen Now
+                \</a>
 
-            <div class="about-content">
+                \<a href="#" class="music-btn secondary">
+                    View Release
+                \</a>
+            \</div>
+        \</div>
 
-                <span class="about-tag">
-                    PRODUCER • COMPOSER • ARTIST
-                </span>
+    \</div>
 
-                <h3>
-                    Music built from<br>
-                    emotion and energy.
-                </h3>
 
-                <p>
-                    JosMelodies is an independent music project focused on
-                    creating melodic electronic music with emotion, atmosphere
-                    and energy at its core.
-                </p>
+    \<!-- Releases -->
+    \<div class="releases-header">
+        \<h3>More Releases\</h3>
+    \</div>
 
-                <p>
-                    From progressive house to EDM, every track is built layer
-                    by layer — turning melodies, sounds and ideas into stories
-                    that listeners can feel.
-                </p>
+    \<div class="releases-grid">
 
+        \<div class="release-card">
+            \<div class="release-cover">
+                \<img src="images/release-1.jpg" alt="Release 1">
+                \<button class="play-btn">▶\</button>
+            \</div>
 
-                <div class="about-stats">
+            \<div class="release-content">
+                \<span>SINGLE · 2026\</span>
+                \<h4>Release One\</h4>
+                \<p>JosMelodies\</p>
+            \</div>
+        \</div>
 
-                    <div class="stat">
-                        <strong>2022</strong>
-                        <span>Started Creating</span>
-                    </div>
 
-                    <div class="stat">
-                        <strong>EDM</strong>
-                        <span>Music Style</span>
-                    </div>
+        \<div class="release-card">
+            \<div class="release-cover">
+                \<img src="images/release-2.jpg" alt="Release 2">
+                \<button class="play-btn">▶\</button>
+            \</div>
 
-                    <div class="stat">
-                        <strong>FL Studio</strong>
-                        <span>Main DAW</span>
-                    </div>
+            \<div class="release-content">
+                \<span>SINGLE · 2026\</span>
+                \<h4>Release Two\</h4>
+                \<p>JosMelodies\</p>
+            \</div>
+        \</div>
 
-                </div>
 
-            </div>
+        \<div class="release-card">
+            \<div class="release-cover">
+                \<img src="images/release-3.jpg" alt="Release 3">
+                \<button class="play-btn">▶\</button>
+            \</div>
 
-        </div>
+            \<div class="release-content">
+                \<span>SINGLE · 2025\</span>
+                \<h4>Release Three\</h4>
+                \<p>JosMelodies\</p>
+            \</div>
+        \</div>
 
-    </section>
+    \</div>
 
+\</section>
+    \<!-- MILESTONE 1.9 — MERCH -->
+\<section class="merch-section" id="merch">
+    \<div class="merch-content">
+        \<p class="merch-label">JOSMELODIES\</p>
 
-    <!-- =========================================
-         MUSIC
-    ========================================== -->
+        \<h2>Wear the sound.\</h2>
 
-    <section class="music-section" id="music">
+        \<p class="merch-description">
+            Official JosMelodies merchandise.
+            Explore the collection and find something made for the journey.
+        \</p>
 
-        <div class="section-heading">
+        \<a
+            href="[https://my-store-109ca6c.creator-spring.com](https://my-store-109ca6c.creator-spring.com)"
+            target="\_blank"
+            rel="noopener noreferrer"
+            class="merch-button"
+        \>
+            SHOP MERCH \<span>↗\</span>
+        \</a>
+    \</div>
+\</section>
+    \<!-- =========================
+     MILESTONE 1.7 — CONTACT
+\========================= -->
 
-            <span class="section-label">MY MUSIC</span>
+\<section class="contact-section" id="contact">
 
-            <h2>
-                Latest <span>Releases</span>
-            </h2>
+    \<div class="contact-container">
 
-            <p>
-                Listen to my latest music and explore my releases.
-            </p>
+        \<div class="contact-heading">
+            \<span class="section-label">GET IN TOUCH\</span>
 
-        </div>
+            \<h2>
+                Let's create\<br>
+                \<span>something amazing.\</span>
+            \</h2>
 
+            \<p>
+                For collaborations, music, projects or just to say hello,
+                I'd love to hear from you.
+            \</p>
+        \</div>
 
-        <!-- FEATURED RELEASE -->
 
-        <div class="featured-release">
+        \<div class="contact-card">
 
-            <div class="featured-artwork">
+            \<div class="contact-icon">
+                ✉
+            \</div>
 
-                <img
-                    src="images/cover.jpg"
-                    alt="JosMelodies latest release"
-                >
+            \<div class="contact-info">
+                \<span>EMAIL\</span>
+                \<h3>Let's talk.\</h3>
+                \<p>Reach out for collaborations and opportunities.\</p>
+            \</div>
 
-                <div class="artwork-glow"></div>
+            \<a
+                href="mailto\:your\@email.com"
+                class="contact-button"
+            \>
+                Contact Me →
+            \</a>
 
-            </div>
+        \</div>
 
 
-            <div class="featured-info">
+        \<div class="social-links">
 
-                <span class="release-type">LATEST RELEASE</span>
+            \<a href="#" target="\_blank">
+                Instagram
+            \</a>
 
-                <h3>Your Song Title</h3>
+            \<a href="#" target="\_blank">
+                YouTube
+            \</a>
 
-                <p class="release-meta">
-                    JosMelodies · 2026 · Single
-                </p>
+            \<a href="#" target="\_blank">
+                Spotify
+            \</a>
 
-                <p class="release-description">
-                    My latest release — blending melodic sounds,
-                    electronic production and the JosMelodies vibe.
-                </p>
+            \<a href="#" target="\_blank">
+                SoundCloud
+            \</a>
 
+        \</div>
 
-                <div class="music-buttons">
+    \</div>
 
-                    <a href="#" class="music-btn primary">
-                        ▶ Listen Now
-                    </a>
+\</section>
+    \<!-- FOOTER -->
 
-                    <a href="#" class="music-btn secondary">
-                        View Release
-                    </a>
+    \<footer>
 
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- RELEASES -->
-
-        <div class="releases-header">
-
-            <h3>More Releases</h3>
-
-        </div>
-
-
-        <div class="releases-grid">
-
-            <div class="release-card">
-
-                <div class="release-cover">
-
-                    <img
-                        src="images/release-1.jpg"
-                        alt="Release 1"
-                    >
-
-                    <button class="play-btn" type="button">
-                        ▶
-                    </button>
-
-                </div>
-
-                <div class="release-content">
-
-                    <span>SINGLE · 2026</span>
-
-                    <h4>Release One</h4>
-
-                    <p>JosMelodies</p>
-
-                </div>
-
-            </div>
-
-
-            <div class="release-card">
-
-                <div class="release-cover">
-
-                    <img
-                        src="images/release-2.jpg"
-                        alt="Release 2"
-                    >
-
-                    <button class="play-btn" type="button">
-                        ▶
-                    </button>
-
-                </div>
-
-                <div class="release-content">
-
-                    <span>SINGLE · 2026</span>
-
-                    <h4>Release Two</h4>
-
-                    <p>JosMelodies</p>
-
-                </div>
-
-            </div>
-
-
-            <div class="release-card">
-
-                <div class="release-cover">
-
-                    <img
-                        src="images/release-3.jpg"
-                        alt="Release 3"
-                    >
-
-                    <button class="play-btn" type="button">
-                        ▶
-                    </button>
-
-                </div>
-
-                <div class="release-content">
-
-                    <span>SINGLE · 2025</span>
-
-                    <h4>Release Three</h4>
-
-                    <p>JosMelodies</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================================
-         MERCH
-    ========================================== -->
-
-    <section class="merch-section" id="merch">
-
-        <div class="merch-content">
-
-            <p class="merch-label">
-                JOSMELODIES
-            </p>
-
-            <h2>
-                Wear the sound.
-            </h2>
-
-            <p class="merch-description">
-                Official JosMelodies merchandise.
-                Explore the collection and find something made for the journey.
-            </p>
-
-            <a
-                href="https://my-store-109ca6c.creator-spring.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="merch-button"
-            >
-                SHOP MERCH <span>↗</span>
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================================
-         CONTACT
-    ========================================== -->
-
-    <section class="contact-section" id="contact">
-
-        <div class="contact-container">
-
-            <div class="contact-heading">
-
-                <span class="section-label">
-                    GET IN TOUCH
-                </span>
-
-                <h2>
-                    Let's create<br>
-                    <span>something amazing.</span>
-                </h2>
-
-                <p>
-                    For collaborations, music, projects or just to say hello,
-                    I'd love to hear from you.
-                </p>
-
-            </div>
-
-
-            <div class="contact-card">
-
-                <div class="contact-icon">
-                    ✉
-                </div>
-
-                <div class="contact-info">
-
-                    <span>EMAIL</span>
-
-                    <h3>Let's talk.</h3>
-
-                    <p>
-                        Reach out for collaborations and opportunities.
-                    </p>
-
-                </div>
-
-                <a
-                    href="mailto:your@email.com"
-                    class="contact-button"
-                >
-                    Contact Me →
-                </a>
-
-            </div>
-
-
-            <div class="social-links">
-
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    Instagram
-                </a>
-
-                <a
-                    href="https://www.youtube.com/@JosMelodies/releases"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    YouTube
-                </a>
-
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    Spotify
-                </a>
-
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    SoundCloud
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================================
-         FOOTER
-    ========================================== -->
-
-    <footer>
-
-        <p>
+        \<p>
             © 2026 JosMelodies. All Rights Reserved.
-        </p>
+        \</p>
 
-    </footer>
+    \</footer>
 
+    \<script src="js/app.js">\</script>
+    \<script>
+/\* =========================================
+   MILESTONE 1.8 — SCROLL REVEAL
+\========================================= \*/
 
-    <!-- MAIN JAVASCRIPT -->
+const sections = document.querySelectorAll("section");
 
-    <script src="js/app.js"></script>
-
-
-    <!-- =========================================
-         SCROLL REVEAL
-    ========================================== -->
-
-    <script>
-
-        const sections = document.querySelectorAll("section");
-
-        const observer = new IntersectionObserver(
-            (entries) => {
-
-                entries.forEach((entry) => {
-
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                    }
-
-                });
-
-            },
-            {
-                threshold: 0.12
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
             }
-        );
-
-        sections.forEach((section) => {
-            observer.observe(section);
         });
+    },
+    {
+        threshold: 0.12
+    }
+);
 
-    </script>
+sections.forEach((section) => {
+    observer.observe(section);
+});
+\</script>
+\<script>
+const menuBtn = document.getElementById("menuBtn");
+const menuOverlay = document.getElementById("menuOverlay");
+const menuClose = document.getElementById("menuClose");
 
+menuBtn.addEventListener("click", () => {
+    menuOverlay.classList.add("active");
+});
 
-    <!-- =========================================
-         MENU
-    ========================================== -->
+menuClose.addEventListener("click", () => {
+    menuOverlay.classList.remove("active");
+});
 
-    <script>
+document.querySelectorAll(".mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        menuOverlay.classList.remove("active");
+    });
+});
+\</script>
+\</body>
 
-        const menuBtn = document.getElementById("menuBtn");
-        const menuOverlay = document.getElementById("menuOverlay");
-        const menuClose = document.getElementById("menuClose");
-
-        menuBtn.addEventListener("click", () => {
-
-            menuOverlay.classList.add("active");
-
-            menuBtn.setAttribute("aria-expanded", "true");
-
-        });
-
-
-        menuClose.addEventListener("click", () => {
-
-            menuOverlay.classList.remove("active");
-
-            menuBtn.setAttribute("aria-expanded", "false");
-
-        });
-
-
-        document.querySelectorAll(".mobile-menu a").forEach((link) => {
-
-            link.addEventListener("click", () => {
-
-                menuOverlay.classList.remove("active");
-
-                menuBtn.setAttribute("aria-expanded", "false");
-
-            });
-
-        });
-
-    </script>
-
-</body>
-
-</html>
+\</html>
