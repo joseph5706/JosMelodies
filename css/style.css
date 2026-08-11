@@ -2662,7 +2662,7 @@ a {
 }
 
 .hero-content > p {
-    margin-top: 0 !important;
+    margin-top: 10 !important;
     margin-bottom: 18px !important;
 }
 /* FIX GAP BETWEEN TAGLINE AND ARTIST TEXT */
