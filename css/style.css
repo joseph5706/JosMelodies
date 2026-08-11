@@ -118,24 +118,24 @@ header{
 
 .menu-btn {
     background: transparent;
-    border: 1px solid rgba(0, 207, 255, 0.35);
+    border: none;
 
     color: white;
 
-    padding: 10px 17px;
-    border-radius: 12px;
+    padding: 10px 4px;
 
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 
     cursor: pointer;
+
+    transition: 0.3s ease;
 }
 
 .menu-btn:hover {
-    background: rgba(0, 207, 255, 0.12);
-    border-color: #00cfff;
-    box-shadow: 0 0 20px rgba(0, 207, 255, 0.25);
+    color: #00cfff;
+    text-shadow: 0 0 15px rgba(0, 207, 255, 0.7);
 }
 
 /* MENU OVERLAY */
