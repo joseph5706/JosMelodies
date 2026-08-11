@@ -3055,3 +3055,15 @@ html {
     justify-content: center;
     width: 100%;
 }
+@media (min-width: 701px) {
+    .hero-content {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
