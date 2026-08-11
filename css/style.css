@@ -2954,31 +2954,34 @@ a {
     }
 }
 /* =========================================
-   NAVBAR LOGO - FORCE CORRECT IMAGE
+   FINAL NAVBAR LOGO
 ========================================= */
 
-.navbar .brand::before,
-.navbar .brand::after {
-    content: none !important;
-    background: none !important;
-    background-image: none !important;
+.navbar .brand {
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    text-decoration: none !important;
 }
 
 .navbar .navbar-logo {
-    content: url("../assets/logo.jpg") !important;
-
     width: 45px !important;
     height: 45px !important;
-
     display: block !important;
-
-    object-fit: contain !important;
-
-    background: none !important;
-    background-image: none !important;
-
+    object-fit: cover !important;
     border: none !important;
+    border-radius: 50% !important;
     box-shadow: none !important;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .navbar .navbar-logo {
+        width: 38px !important;
+        height: 38px !important;
+    }
 }
 
 @media (max-width: 700px) {
