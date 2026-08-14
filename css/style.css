@@ -3323,92 +3323,148 @@ html {
     }
 }
 /* =========================================
-   JOSMELODIES SHOOTING STARS
-   CLEAN FINAL VERSION
+   JOSMELODIES — ONE SHOOTING STAR AT A TIME
+   5 SEC RIGHT → LEFT
+   10 SEC LEFT → RIGHT
    ========================================= */
 
-.website-music-sparkles span.shooting-star {
-    position: fixed;
+.website-music-sparkles .shooting-star {
+    position: fixed !important;
 
-    width: 150px;
-    height: 3px;
+    width: 150px !important;
+    height: 3px !important;
 
-    display: block;
+    display: block !important;
 
-    opacity: 0;
+    opacity: 0 !important;
 
-    font-size: 0;
+    pointer-events: none !important;
 
-    pointer-events: none;
+    z-index: 999999 !important;
 
-    z-index: 999999;
+    border-radius: 50% !important;
 
-    border-radius: 50%;
-
-    background: linear-gradient(
-        90deg,
-        transparent,
-        #4da6ff,
-        #ffffff
-    );
+    animation-duration: 20s !important;
+    animation-timing-function: linear !important;
+    animation-iteration-count: infinite !important;
 
     box-shadow:
-        0 0 8px #ffffff,
-        0 0 18px #4da6ff,
-        0 0 35px #168cff;
-
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+        0 0 6px #ffffff,
+        0 0 15px #4da6ff,
+        0 0 30px #168cff !important;
 }
 
 
 /* =========================================
-   ONE SHOOTING STAR AT A TIME
+   STAR 1
+   RIGHT → LEFT
+   FIRST APPEARS AT 5 SECONDS
    ========================================= */
 
-/* STAR 1 — RIGHT → LEFT — starts at 5 sec */
 .website-music-sparkles .star-1 {
-    top: 30vh;
-    right: -180px;
-    left: auto;
+    top: 25vh !important;
+
+    right: -170px !important;
+    left: auto !important;
 
     background: linear-gradient(
         270deg,
-        transparent,
-        #4da6ff,
-        #ffffff
-    );
+        transparent 0%,
+        #4da6ff 55%,
+        #ffffff 100%
+    ) !important;
 
-    animation-name: josStarLeft;
-    animation-duration: 20s;
-    animation-delay: 5s;
-    animation-iteration-count: infinite;
+    animation-name: josRightToLeft !important;
+    animation-delay: 5s !important;
 }
 
 
-/* STAR 2 — LEFT → RIGHT — starts at 10 sec */
+/* =========================================
+   STAR 2
+   LEFT → RIGHT
+   FIRST APPEARS AT 10 SECONDS
+   ========================================= */
+
 .website-music-sparkles .star-2 {
-    top: 50vh;
-    left: -180px;
-    right: auto;
+    top: 50vh !important;
+
+    left: -170px !important;
+    right: auto !important;
 
     background: linear-gradient(
         90deg,
-        transparent,
-        #4da6ff,
-        #ffffff
-    );
+        transparent 0%,
+        #4da6ff 55%,
+        #ffffff 100%
+    ) !important;
 
-    animation-name: josStarRight;
-    animation-duration: 20s;
-    animation-delay: 10s;
-    animation-iteration-count: infinite;
+    animation-name: josLeftToRight !important;
+    animation-delay: 10s !important;
 }
 
 
-/* TURN OFF STAR 3 AND STAR 4 */
+/* NEVER USE THESE TWO */
 .website-music-sparkles .star-3,
 .website-music-sparkles .star-4 {
     display: none !important;
+}
+
+
+/* =========================================
+   RIGHT → LEFT
+   ========================================= */
+
+@keyframes josRightToLeft {
+
+    0% {
+        opacity: 0 !important;
+        transform: translate(0, 0) rotate(-35deg);
+    }
+
+    5% {
+        opacity: 1 !important;
+    }
+
+    12% {
+        opacity: 1 !important;
+        transform: translate(-120vw, 70vh) rotate(-35deg);
+    }
+
+    16% {
+        opacity: 0 !important;
+    }
+
+    100% {
+        opacity: 0 !important;
+    }
+}
+
+
+/* =========================================
+   LEFT → RIGHT
+   ========================================= */
+
+@keyframes josLeftToRight {
+
+    0% {
+        opacity: 0 !important;
+        transform: translate(0, 0) rotate(35deg);
+    }
+
+    5% {
+        opacity: 1 !important;
+    }
+
+    12% {
+        opacity: 1 !important;
+        transform: translate(120vw, 70vh) rotate(35deg);
+    }
+
+    16% {
+        opacity: 0 !important;
+    }
+
+    100% {
+        opacity: 0 !important;
+    }
 }
