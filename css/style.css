@@ -3478,3 +3478,65 @@ html {
         opacity: 0 !important;
     }
 }
+/* =========================================
+   SHOOTING STARS — FORCE TEST
+   ========================================= */
+
+.website-music-sparkles .shooting-star {
+    position: fixed !important;
+
+    width: 160px !important;
+    height: 3px !important;
+
+    display: block !important;
+
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        #4da6ff 50%,
+        #ffffff 100%
+    ) !important;
+
+    opacity: 1 !important;
+
+    z-index: 999999 !important;
+
+    pointer-events: none !important;
+
+    box-shadow:
+        0 0 8px #ffffff,
+        0 0 20px #4da6ff,
+        0 0 40px #1e90ff !important;
+
+    animation: none !important;
+}
+
+
+/* STAR 1 */
+.website-music-sparkles .star-1 {
+    top: 20% !important;
+    left: 20% !important;
+}
+
+
+/* STAR 2 */
+.website-music-sparkles .star-2 {
+    top: 35% !important;
+    right: 20% !important;
+    left: auto !important;
+}
+
+
+/* STAR 3 */
+.website-music-sparkles .star-3 {
+    top: 50% !important;
+    left: 40% !important;
+}
+
+
+/* STAR 4 */
+.website-music-sparkles .star-4 {
+    top: 65% !important;
+    right: 40% !important;
+    left: auto !important;
+}
