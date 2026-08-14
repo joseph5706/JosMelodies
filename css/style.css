@@ -3433,24 +3433,29 @@ html {
    LEFT → RIGHT
    ========================================= */
 
+/* =========================================
+   REAL SHOOTING STAR — LEFT → RIGHT
+   ========================================= */
+
 @keyframes josStarRight {
 
     0% {
         opacity: 0;
-        transform: translate(0, 0) rotate(35deg);
+        transform: translate(-10vw, -10vh) rotate(35deg);
     }
 
-    5% {
+    4% {
         opacity: 1;
     }
 
-    35% {
+    7% {
         opacity: 1;
-        transform: translate(120vw, 65vh) rotate(35deg);
+        transform: translate(15vw, 12vh) rotate(35deg);
     }
 
-    40% {
+    11% {
         opacity: 0;
+        transform: translate(45vw, 35vh) rotate(35deg);
     }
 
     100% {
@@ -3460,27 +3465,28 @@ html {
 
 
 /* =========================================
-   RIGHT → LEFT
+   REAL SHOOTING STAR — RIGHT → LEFT
    ========================================= */
 
 @keyframes josStarLeft {
 
     0% {
         opacity: 0;
-        transform: translate(0, 0) rotate(-35deg);
+        transform: translate(10vw, -10vh) rotate(-35deg);
     }
 
-    5% {
+    4% {
         opacity: 1;
     }
 
-    35% {
+    7% {
         opacity: 1;
-        transform: translate(-120vw, 65vh) rotate(-35deg);
+        transform: translate(-15vw, 12vh) rotate(-35deg);
     }
 
-    40% {
+    11% {
         opacity: 0;
+        transform: translate(-45vw, 35vh) rotate(-35deg);
     }
 
     100% {
