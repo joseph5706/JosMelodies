@@ -3364,25 +3364,14 @@ html {
 
 
 /* =========================================
-   STAR 1 — LEFT → RIGHT
+   ONE SHOOTING STAR AT A TIME
    ========================================= */
 
+/* STAR 1 — RIGHT → LEFT — starts at 5 sec */
 .website-music-sparkles .star-1 {
-    top: 12vh;
-    left: -180px;
-
-    animation-name: josStarRight;
-    animation-delay: 0s;
-}
-
-
-/* =========================================
-   STAR 2 — RIGHT → LEFT
-   ========================================= */
-
-.website-music-sparkles .star-2 {
     top: 30vh;
     right: -180px;
+    left: auto;
 
     background: linear-gradient(
         270deg,
@@ -3392,104 +3381,34 @@ html {
     );
 
     animation-name: josStarLeft;
-    animation-delay: 0s;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
 }
 
 
-/* =========================================
-   STAR 3 — LEFT → RIGHT
-   ========================================= */
-
-.website-music-sparkles .star-3 {
-    top: 52vh;
+/* STAR 2 — LEFT → RIGHT — starts at 10 sec */
+.website-music-sparkles .star-2 {
+    top: 50vh;
     left: -180px;
+    right: auto;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #4da6ff,
+        #ffffff
+    );
 
     animation-name: josStarRight;
-    animation-delay: 2.5s;
+    animation-duration: 20s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
 }
 
 
-/* =========================================
-   STAR 4 — RIGHT → LEFT
-   ========================================= */
-
+/* TURN OFF STAR 3 AND STAR 4 */
+.website-music-sparkles .star-3,
 .website-music-sparkles .star-4 {
-    top: 70vh;
-    right: -180px;
-
-    background: linear-gradient(
-        270deg,
-        transparent,
-        #4da6ff,
-        #ffffff
-    );
-
-    animation-name: josStarLeft;
-    animation-delay: 2.5s;
-}
-
-
-/* =========================================
-   LEFT → RIGHT
-   ========================================= */
-
-/* =========================================
-   REAL SHOOTING STAR — LEFT → RIGHT
-   ========================================= */
-
-@keyframes josStarRight {
-
-    0% {
-        opacity: 0;
-        transform: translate(-10vw, -10vh) rotate(35deg);
-    }
-
-    4% {
-        opacity: 1;
-    }
-
-    7% {
-        opacity: 1;
-        transform: translate(15vw, 12vh) rotate(35deg);
-    }
-
-    11% {
-        opacity: 0;
-        transform: translate(45vw, 35vh) rotate(35deg);
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-
-/* =========================================
-   REAL SHOOTING STAR — RIGHT → LEFT
-   ========================================= */
-
-@keyframes josStarLeft {
-
-    0% {
-        opacity: 0;
-        transform: translate(10vw, -10vh) rotate(-35deg);
-    }
-
-    4% {
-        opacity: 1;
-    }
-
-    7% {
-        opacity: 1;
-        transform: translate(-15vw, 12vh) rotate(-35deg);
-    }
-
-    11% {
-        opacity: 0;
-        transform: translate(-45vw, 35vh) rotate(-35deg);
-    }
-
-    100% {
-        opacity: 0;
-    }
+    display: none !important;
 }
