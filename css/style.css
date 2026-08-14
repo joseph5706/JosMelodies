@@ -3353,17 +3353,13 @@ html {
         0 0 15px #4da6ff,
         0 0 30px #168cff !important;
 }
-
-
 /* =========================================
-   STAR 1
-   RIGHT → LEFT
-   FIRST APPEARS AT 5 SECONDS
+   STAR 1 — RIGHT → LEFT
+   STARTS AT 5 SECONDS
    ========================================= */
 
 .website-music-sparkles .star-1 {
     top: 25vh !important;
-
     right: -170px !important;
     left: auto !important;
 
@@ -3374,20 +3370,17 @@ html {
         #ffffff 100%
     ) !important;
 
-    animation-name: josRightToLeft !important;
-    animation-delay: 5s !important;
+    animation: shootingStarRight 20s linear infinite !important;
 }
 
 
 /* =========================================
-   STAR 2
-   LEFT → RIGHT
-   FIRST APPEARS AT 10 SECONDS
+   STAR 2 — LEFT → RIGHT
+   STARTS AT 10 SECONDS
    ========================================= */
 
 .website-music-sparkles .star-2 {
     top: 50vh !important;
-
     left: -170px !important;
     right: auto !important;
 
@@ -3398,44 +3391,62 @@ html {
         #ffffff 100%
     ) !important;
 
-    animation-name: josLeftToRight !important;
-    animation-delay: 10s !important;
-}
-
-
-/* NEVER USE THESE TWO */
-.website-music-sparkles .star-3,
-.website-music-sparkles .star-4 {
-    display: none !important;
+    animation: shootingStarLeft 20s linear infinite !important;
 }
 
 
 /* =========================================
+   STAR 3 — RIGHT → LEFT
+   STARTS AT 15 SECONDS
+   ========================================= */
+
+.website-music-sparkles .star-3 {
+    top: 70vh !important;
+    right: -170px !important;
+    left: auto !important;
+
+    background: linear-gradient(
+        270deg,
+        transparent 0%,
+        #4da6ff 55%,
+        #ffffff 100%
+    ) !important;
+
+    animation: shootingStarRight 20s linear infinite !important;
+    animation-delay: 10s !important;
+}
+
+
+/* STAR 4 OFF */
+
+.website-music-sparkles .star-4 {
+    display: none !important;
+}
+/* =========================================
    RIGHT → LEFT
    ========================================= */
 
-@keyframes josRightToLeft {
+@keyframes shootingStarRight {
 
-    0% {
+    0%,
+    20% {
         opacity: 0;
         transform: translate(0, 0) rotate(-35deg);
     }
 
-    5% {
+    25% {
         opacity: 1;
     }
 
-    12% {
+    32% {
         opacity: 1;
         transform: translate(-120vw, 70vh) rotate(-35deg);
     }
 
-    16% {
-        opacity: 0;
-    }
-
+    36%,
     100% {
         opacity: 0;
+        transform: translate(-120vw, 70vh) rotate(-35deg);
     }
 }
 
@@ -3444,27 +3455,27 @@ html {
    LEFT → RIGHT
    ========================================= */
 
-@keyframes josLeftToRight {
+@keyframes shootingStarLeft {
 
-    0% {
+    0%,
+    45% {
         opacity: 0;
         transform: translate(0, 0) rotate(35deg);
     }
 
-    5% {
+    50% {
         opacity: 1;
     }
 
-    12% {
+    57% {
         opacity: 1;
         transform: translate(120vw, 70vh) rotate(35deg);
     }
 
-    16% {
-        opacity: 0;
-    }
-
+    61%,
     100% {
         opacity: 0;
+        transform: translate(120vw, 70vh) rotate(35deg);
     }
 }
+
