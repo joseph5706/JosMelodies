@@ -3478,4 +3478,80 @@ html {
         transform: translate(120vw, 70vh) rotate(35deg);
     }
 }
+/* =========================================
+   MOBILE — SHOOTING STARS
+   KEEP THEM SHOOTING ACROSS THE SCREEN
+   ========================================= */
 
+@media (max-width: 700px) {
+
+    .website-music-sparkles .shooting-star {
+        position: fixed !important;
+    }
+
+    /* RIGHT → LEFT */
+    .website-music-sparkles .star-1,
+    .website-music-sparkles .star-3 {
+        right: -170px !important;
+        left: auto !important;
+        transform-origin: center !important;
+    }
+
+    /* LEFT → RIGHT */
+    .website-music-sparkles .star-2 {
+        left: -170px !important;
+        right: auto !important;
+        transform-origin: center !important;
+    }
+
+    /* Prevent the mobile star from moving downward */
+    @keyframes shootingStarRight {
+
+        0% {
+            opacity: 0;
+            transform: translate(0, 0) rotate(-20deg);
+        }
+
+        5% {
+            opacity: 1;
+        }
+
+        30% {
+            opacity: 1;
+            transform: translate(-120vw, 20vh) rotate(-20deg);
+        }
+
+        35% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes shootingStarLeft {
+
+        0% {
+            opacity: 0;
+            transform: translate(0, 0) rotate(20deg);
+        }
+
+        5% {
+            opacity: 1;
+        }
+
+        30% {
+            opacity: 1;
+            transform: translate(120vw, 20vh) rotate(20deg);
+        }
+
+        35% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+}
