@@ -3354,8 +3354,8 @@ html {
         0 0 30px #168cff !important;
 }
 /* =========================================
-   STAR 1 — RIGHT → LEFT
-   STARTS AT 5 SECONDS
+   DESKTOP — CLEAN SHOOTING STAR SYSTEM
+   ONE STAR EVERY 5 SECONDS
    ========================================= */
 
 .website-music-sparkles .star-1 {
@@ -3365,19 +3365,13 @@ html {
 
     background: linear-gradient(
         270deg,
-        transparent 0%,
+        transparent,
         #4da6ff 55%,
-        #ffffff 100%
+        #ffffff
     ) !important;
 
-    animation: shootingStarRight 20s linear infinite !important;
+    animation: desktopStar1 20s linear infinite !important;
 }
-
-
-/* =========================================
-   STAR 2 — LEFT → RIGHT
-   STARTS AT 10 SECONDS
-   ========================================= */
 
 .website-music-sparkles .star-2 {
     top: 50vh !important;
@@ -3386,19 +3380,13 @@ html {
 
     background: linear-gradient(
         90deg,
-        transparent 0%,
+        transparent,
         #4da6ff 55%,
-        #ffffff 100%
+        #ffffff
     ) !important;
 
-    animation: shootingStarLeft 20s linear infinite !important;
+    animation: desktopStar2 20s linear infinite !important;
 }
-
-
-/* =========================================
-   STAR 3 — RIGHT → LEFT
-   STARTS AT 15 SECONDS
-   ========================================= */
 
 .website-music-sparkles .star-3 {
     top: 70vh !important;
@@ -3407,86 +3395,95 @@ html {
 
     background: linear-gradient(
         270deg,
-        transparent 0%,
+        transparent,
         #4da6ff 55%,
-        #ffffff 100%
+        #ffffff
     ) !important;
 
-    animation: shootingStarRight 20s linear infinite !important;
-    animation-delay: 10s !important;
+    animation: desktopStar3 20s linear infinite !important;
 }
-
-
-/* STAR 4 OFF */
 
 .website-music-sparkles .star-4 {
     display: none !important;
 }
-/* =========================================
-   RIGHT → LEFT
-   ========================================= */
+
 
 /* =========================================
-   DESKTOP — RIGHT → LEFT
-   SHOOTING TIME ≈ 1.6 SECONDS
+   STAR 1 — 5 SECONDS
    ========================================= */
 
-@keyframes shootingStarRight {
+@keyframes desktopStar1 {
 
-    0% {
+    0%, 25% {
         opacity: 0;
         transform: translate(0, 0) rotate(-25deg);
     }
 
-    1% {
+    26% {
         opacity: 1;
     }
 
-    8% {
+    34% {
         opacity: 1;
         transform: translate(-120vw, 70vh) rotate(-25deg);
     }
 
-    10% {
-        opacity: 0;
-    }
-
-    100% {
+    35%, 100% {
         opacity: 0;
     }
 }
 
 
 /* =========================================
-   DESKTOP — LEFT → RIGHT
-   SHOOTING TIME ≈ 1.6 SECONDS
+   STAR 2 — 10 SECONDS
    ========================================= */
 
-@keyframes shootingStarLeft {
+@keyframes desktopStar2 {
 
-    0% {
+    0%, 50% {
         opacity: 0;
         transform: translate(0, 0) rotate(25deg);
     }
 
-    1% {
+    51% {
         opacity: 1;
     }
 
-    8% {
+    59% {
         opacity: 1;
         transform: translate(120vw, 70vh) rotate(25deg);
     }
 
-    10% {
-        opacity: 0;
-    }
-
-    100% {
+    60%, 100% {
         opacity: 0;
     }
 }
+
+
 /* =========================================
+   STAR 3 — 15 SECONDS
+   ========================================= */
+
+@keyframes desktopStar3 {
+
+    0%, 75% {
+        opacity: 0;
+        transform: translate(0, 0) rotate(-25deg);
+    }
+
+    76% {
+        opacity: 1;
+    }
+
+    84% {
+        opacity: 1;
+        transform: translate(-120vw, 70vh) rotate(-25deg);
+    }
+
+    85%, 100% {
+        opacity: 0;
+    }
+}/* =========================================
    MOBILE SHOOTING STARS
    ONE STAR EVERY 5 SECONDS
    ========================================= */
