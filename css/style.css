@@ -3323,11 +3323,11 @@ html {
     }
 }
 /* =========================================
-   JOSMELODIES SHOOTING STARS
-   FINAL VERSION
+   JOSMELODIES — REAL SHOOTING STARS
+   BOTH DIRECTIONS EVERY 5 SECONDS
    ========================================= */
 
-.shooting-star {
+.website-music-sparkles .shooting-star {
     position: absolute !important;
 
     width: 130px !important;
@@ -3335,9 +3335,9 @@ html {
 
     background: linear-gradient(
         90deg,
-        transparent,
-        rgba(150, 220, 255, 0.8),
-        #ffffff
+        transparent 0%,
+        rgba(120, 200, 255, 0.8) 55%,
+        #ffffff 100%
     ) !important;
 
     border-radius: 50% !important;
@@ -3345,6 +3345,11 @@ html {
     opacity: 0 !important;
 
     pointer-events: none !important;
+
+    color: transparent !important;
+    font-size: 0 !important;
+
+    bottom: auto !important;
 
     box-shadow:
         0 0 5px #ffffff,
@@ -3355,94 +3360,119 @@ html {
 
 
 /* =========================================
-   DESKTOP
+   DESKTOP ONLY
    ========================================= */
 
 @media (min-width: 701px) {
 
     /* LEFT → RIGHT */
-    .star-1 {
-        top: 10% !important;
+    .website-music-sparkles .star-1 {
+        top: 12% !important;
         left: -150px !important;
         right: auto !important;
 
-        animation: starLeftRight 15s linear infinite !important;
+        animation: starToRight 10s linear infinite !important;
         animation-delay: 0s !important;
     }
 
 
     /* RIGHT → LEFT */
-    .star-2 {
-        top: 32% !important;
+    .website-music-sparkles .star-2 {
+        top: 28% !important;
         right: -150px !important;
         left: auto !important;
 
-        animation: starRightLeft 15s linear infinite !important;
-        animation-delay: 5s !important;
+        animation: starToLeft 10s linear infinite !important;
+        animation-delay: 0s !important;
     }
 
 
     /* LEFT → RIGHT */
-    .star-3 {
-        top: 55% !important;
+    .website-music-sparkles .star-3 {
+        top: 50% !important;
         left: -150px !important;
         right: auto !important;
 
-        animation: starLeftRight 15s linear infinite !important;
-        animation-delay: 10s !important;
+        animation: starToRight 10s linear infinite !important;
+        animation-delay: 5s !important;
+    }
+
+
+    /* RIGHT → LEFT */
+    .website-music-sparkles .star-4 {
+        top: 68% !important;
+        right: -150px !important;
+        left: auto !important;
+
+        animation: starToLeft 10s linear infinite !important;
+        animation-delay: 5s !important;
     }
 }
 
 
 /* =========================================
-   LEFT → RIGHT
+   LEFT → RIGHT DIAGONAL
    ========================================= */
 
-@keyframes starLeftRight {
+@keyframes starToRight {
 
     0% {
         opacity: 0 !important;
-        transform: translate(0, 0) rotate(35deg);
+        transform:
+            translate(0, 0)
+            rotate(35deg);
     }
 
     3% {
         opacity: 1 !important;
     }
 
-    14% {
+    15% {
+        opacity: 1 !important;
+        transform:
+            translate(120vw, 65vh)
+            rotate(35deg);
+    }
+
+    18% {
         opacity: 0 !important;
-        transform: translate(120vw, 65vh) rotate(35deg);
     }
 
     100% {
         opacity: 0 !important;
-        transform: translate(120vw, 65vh) rotate(35deg);
     }
 }
 
 
 /* =========================================
-   RIGHT → LEFT
+   RIGHT → LEFT DIAGONAL
    ========================================= */
 
-@keyframes starRightLeft {
+@keyframes starToLeft {
 
     0% {
         opacity: 0 !important;
-        transform: translate(0, 0) rotate(-35deg);
+        transform:
+            translate(0, 0)
+            rotate(-35deg);
     }
 
     3% {
         opacity: 1 !important;
     }
 
-    14% {
+    15% {
+        opacity: 1 !important;
+        transform:
+            translate(-120vw, 65vh)
+            rotate(-35deg);
+    }
+
+    18% {
         opacity: 0 !important;
-        transform: translate(-120vw, 65vh) rotate(-35deg);
     }
 
     100% {
         opacity: 0 !important;
-        transform: translate(-120vw, 65vh) rotate(-35deg);
     }
 }
