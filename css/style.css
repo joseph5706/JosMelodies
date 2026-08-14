@@ -3336,7 +3336,7 @@ html {
 
     display: block !important;
 
-    opacity: 0 !important;
+    opacity: 0;
 
     pointer-events: none !important;
 
@@ -3417,25 +3417,25 @@ html {
 @keyframes josRightToLeft {
 
     0% {
-        opacity: 0 !important;
+        opacity: 0;
         transform: translate(0, 0) rotate(-35deg);
     }
 
     5% {
-        opacity: 1 !important;
+        opacity: 1;
     }
 
     12% {
-        opacity: 1 !important;
+        opacity: 1;
         transform: translate(-120vw, 70vh) rotate(-35deg);
     }
 
     16% {
-        opacity: 0 !important;
+        opacity: 0;
     }
 
     100% {
-        opacity: 0 !important;
+        opacity: 0;
     }
 }
 
@@ -3447,24 +3447,24 @@ html {
 @keyframes josLeftToRight {
 
     0% {
-        opacity: 0 !important;
+        opacity: 0;
         transform: translate(0, 0) rotate(35deg);
     }
 
     5% {
-        opacity: 1 !important;
+        opacity: 1;
     }
 
     12% {
-        opacity: 1 !important;
+        opacity: 1;
         transform: translate(120vw, 70vh) rotate(35deg);
     }
 
     16% {
-        opacity: 0 !important;
+        opacity: 0;
     }
 
     100% {
-        opacity: 0 !important;
+        opacity: 0;
     }
 }
