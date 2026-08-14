@@ -3479,64 +3479,208 @@ html {
     }
 }
 /* =========================================
-   SHOOTING STARS — FORCE TEST
+   JOSMELODIES — SHOOTING STARS
+   4 STARS / BOTH DIRECTIONS
    ========================================= */
 
 .website-music-sparkles .shooting-star {
     position: fixed !important;
 
-    width: 160px !important;
+    width: 150px !important;
     height: 3px !important;
 
     display: block !important;
 
-    background: linear-gradient(
-        90deg,
-        transparent 0%,
-        #4da6ff 50%,
-        #ffffff 100%
-    ) !important;
-
-    opacity: 1 !important;
-
-    z-index: 999999 !important;
+    opacity: 0 !important;
 
     pointer-events: none !important;
 
-    box-shadow:
-        0 0 8px #ffffff,
-        0 0 20px #4da6ff,
-        0 0 40px #1e90ff !important;
+    z-index: 999999 !important;
 
-    animation: none !important;
+    border-radius: 50% !important;
+
+    font-size: 0 !important;
+
+    /* IMPORTANT: cancel the music-note animation */
+    animation-duration: 10s !important;
+    animation-timing-function: linear !important;
+    animation-iteration-count: infinite !important;
 }
 
 
-/* STAR 1 */
+/* =========================================
+   STAR 1 — LEFT → RIGHT
+   ========================================= */
+
 .website-music-sparkles .star-1 {
-    top: 20% !important;
-    left: 20% !important;
+    top: 12vh !important;
+    left: -180px !important;
+    right: auto !important;
+
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(80, 170, 255, 0.4) 45%,
+        #ffffff 100%
+    ) !important;
+
+    box-shadow:
+        0 0 6px #ffffff,
+        0 0 15px #4da6ff,
+        0 0 30px #168cff !important;
+
+    animation-name: starLeftToRight !important;
+    animation-delay: 0s !important;
 }
 
 
-/* STAR 2 */
+/* =========================================
+   STAR 2 — RIGHT → LEFT
+   ========================================= */
+
 .website-music-sparkles .star-2 {
-    top: 35% !important;
-    right: 20% !important;
+    top: 28vh !important;
+    right: -180px !important;
     left: auto !important;
+
+    background: linear-gradient(
+        270deg,
+        transparent 0%,
+        rgba(80, 170, 255, 0.4) 45%,
+        #ffffff 100%
+    ) !important;
+
+    box-shadow:
+        0 0 6px #ffffff,
+        0 0 15px #4da6ff,
+        0 0 30px #168cff !important;
+
+    animation-name: starRightToLeft !important;
+    animation-delay: 0s !important;
 }
 
 
-/* STAR 3 */
+/* =========================================
+   STAR 3 — LEFT → RIGHT
+   ========================================= */
+
 .website-music-sparkles .star-3 {
-    top: 50% !important;
-    left: 40% !important;
+    top: 48vh !important;
+    left: -180px !important;
+    right: auto !important;
+
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(80, 170, 255, 0.4) 45%,
+        #ffffff 100%
+    ) !important;
+
+    box-shadow:
+        0 0 6px #ffffff,
+        0 0 15px #4da6ff,
+        0 0 30px #168cff !important;
+
+    animation-name: starLeftToRight !important;
+    animation-delay: 5s !important;
 }
 
 
-/* STAR 4 */
+/* =========================================
+   STAR 4 — RIGHT → LEFT
+   ========================================= */
+
 .website-music-sparkles .star-4 {
-    top: 65% !important;
-    right: 40% !important;
+    top: 65vh !important;
+    right: -180px !important;
     left: auto !important;
+
+    background: linear-gradient(
+        270deg,
+        transparent 0%,
+        rgba(80, 170, 255, 0.4) 45%,
+        #ffffff 100%
+    ) !important;
+
+    box-shadow:
+        0 0 6px #ffffff,
+        0 0 15px #4da6ff,
+        0 0 30px #168cff !important;
+
+    animation-name: starRightToLeft !important;
+    animation-delay: 5s !important;
+}
+
+
+/* =========================================
+   LEFT → RIGHT — DIAGONAL
+   ========================================= */
+
+@keyframes starLeftToRight {
+
+    0% {
+        opacity: 0 !important;
+        transform:
+            translate(0, 0)
+            rotate(35deg);
+    }
+
+    2% {
+        opacity: 1 !important;
+    }
+
+    14% {
+        opacity: 1 !important;
+        transform:
+            translate(120vw, 65vh)
+            rotate(35deg);
+    }
+
+    17% {
+        opacity: 0 !important;
+    }
+
+    100% {
+        opacity: 0 !important;
+        transform:
+            translate(120vw, 65vh)
+            rotate(35deg);
+    }
+}
+
+
+/* =========================================
+   RIGHT → LEFT — DIAGONAL
+   ========================================= */
+
+@keyframes starRightToLeft {
+
+    0% {
+        opacity: 0 !important;
+        transform:
+            translate(0, 0)
+            rotate(-35deg);
+    }
+
+    2% {
+        opacity: 1 !important;
+    }
+
+    14% {
+        opacity: 1 !important;
+        transform:
+            translate(-120vw, 65vh)
+            rotate(-35deg);
+    }
+
+    17% {
+        opacity: 0 !important;
+    }
+
+    100% {
+        opacity: 0 !important;
+        transform:
+            translate(-120vw, 65vh)
+            rotate(-35deg);
+    }
 }
