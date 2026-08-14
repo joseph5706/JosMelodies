@@ -3426,102 +3426,162 @@ html {
    RIGHT → LEFT
    ========================================= */
 
+/* =========================================
+   DESKTOP — RIGHT → LEFT
+   SHOOTING TIME ≈ 1.6 SECONDS
+   ========================================= */
+
 @keyframes shootingStarRight {
 
-    0%,
-    20% {
+    0% {
         opacity: 0;
-        transform: translate(0, 0) rotate(-35deg);
+        transform: translate(0, 0) rotate(-25deg);
     }
 
-    25% {
+    1% {
         opacity: 1;
     }
 
-    32% {
+    8% {
         opacity: 1;
-        transform: translate(-120vw, 70vh) rotate(-35deg);
+        transform: translate(-120vw, 70vh) rotate(-25deg);
     }
 
-    36%,
+    10% {
+        opacity: 0;
+    }
+
     100% {
         opacity: 0;
-        transform: translate(-120vw, 70vh) rotate(-35deg);
     }
 }
 
 
 /* =========================================
-   LEFT → RIGHT
+   DESKTOP — LEFT → RIGHT
+   SHOOTING TIME ≈ 1.6 SECONDS
    ========================================= */
 
 @keyframes shootingStarLeft {
 
-    0%,
-    45% {
+    0% {
         opacity: 0;
-        transform: translate(0, 0) rotate(35deg);
+        transform: translate(0, 0) rotate(25deg);
     }
 
-    50% {
+    1% {
         opacity: 1;
     }
 
-    57% {
+    8% {
         opacity: 1;
-        transform: translate(120vw, 70vh) rotate(35deg);
+        transform: translate(120vw, 70vh) rotate(25deg);
     }
 
-    61%,
+    10% {
+        opacity: 0;
+    }
+
     100% {
         opacity: 0;
-        transform: translate(120vw, 70vh) rotate(35deg);
     }
 }
 /* =========================================
-   MOBILE — SHOOTING STARS
-   KEEP THEM SHOOTING ACROSS THE SCREEN
+   MOBILE SHOOTING STARS
+   ONE STAR EVERY 5 SECONDS
    ========================================= */
 
 @media (max-width: 700px) {
 
     .website-music-sparkles .shooting-star {
         position: fixed !important;
+        width: 110px !important;
+        height: 2px !important;
+
+        animation-duration: 20s !important;
+        animation-timing-function: linear !important;
+        animation-iteration-count: infinite !important;
+
+        bottom: auto !important;
     }
 
-    /* RIGHT → LEFT */
-    .website-music-sparkles .star-1,
-    .website-music-sparkles .star-3 {
-        right: -170px !important;
+
+    /* -----------------------------
+       STAR 1
+       RIGHT → LEFT
+       5 seconds
+       ----------------------------- */
+
+    .website-music-sparkles .star-1 {
+        top: 25vh !important;
+        right: -130px !important;
         left: auto !important;
-        transform-origin: center !important;
+
+        animation-name: mobileStarRight !important;
+        animation-delay: 5s !important;
     }
 
-    /* LEFT → RIGHT */
+
+    /* -----------------------------
+       STAR 2
+       LEFT → RIGHT
+       10 seconds
+       ----------------------------- */
+
     .website-music-sparkles .star-2 {
-        left: -170px !important;
+        top: 45vh !important;
+        left: -130px !important;
         right: auto !important;
-        transform-origin: center !important;
+
+        animation-name: mobileStarLeft !important;
+        animation-delay: 10s !important;
     }
 
-    /* Prevent the mobile star from moving downward */
-    @keyframes shootingStarRight {
+
+    /* -----------------------------
+       STAR 3
+       RIGHT → LEFT
+       15 seconds
+       ----------------------------- */
+
+    .website-music-sparkles .star-3 {
+        top: 65vh !important;
+        right: -130px !important;
+        left: auto !important;
+
+        animation-name: mobileStarRight !important;
+        animation-delay: 15s !important;
+    }
+
+
+    /* Star 4 OFF */
+    .website-music-sparkles .star-4 {
+        display: none !important;
+    }
+
+
+    /* =================================
+       MOBILE RIGHT → LEFT
+       FAST SHOOT
+       ================================= */
+
+    @keyframes mobileStarRight {
 
         0% {
             opacity: 0;
-            transform: translate(0, 0) rotate(-20deg);
+            transform: translate(0, -5vh) rotate(-25deg);
         }
 
-        5% {
+        2% {
             opacity: 1;
         }
 
-        30% {
+        8% {
             opacity: 1;
-            transform: translate(-120vw, 20vh) rotate(-20deg);
+            transform: translate(-120vw, 20vh) rotate(-25deg);
         }
 
-        35% {
+        10% {
             opacity: 0;
         }
 
@@ -3530,23 +3590,29 @@ html {
         }
     }
 
-    @keyframes shootingStarLeft {
+
+    /* =================================
+       MOBILE LEFT → RIGHT
+       FAST SHOOT
+       ================================= */
+
+    @keyframes mobileStarLeft {
 
         0% {
             opacity: 0;
-            transform: translate(0, 0) rotate(20deg);
+            transform: translate(0, -5vh) rotate(25deg);
         }
 
-        5% {
+        2% {
             opacity: 1;
         }
 
-        30% {
+        8% {
             opacity: 1;
-            transform: translate(120vw, 20vh) rotate(20deg);
+            transform: translate(120vw, 20vh) rotate(25deg);
         }
 
-        35% {
+        10% {
             opacity: 0;
         }
 
